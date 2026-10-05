@@ -7,6 +7,15 @@
     <language>it</language>
     <item>
       <title>Unwrap 1.1</title>
+      <pubDate>Mon, 05 Oct 2026 13:22:10 -0000</pubDate>
+      <sparkle:version>16</sparkle:version>
+      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/frabolla/unwrap-macOS-release/releases/tag/v1.1</link>
+      <enclosure url="https://github.com/frabolla/unwrap-macOS-release/releases/download/v1.1/Unwrap.dmg" sparkle:edSignature="vVIDKv1LcHkgniMDBpzPmHPBKcqn4o0FYw1xKhipf8oFK5jl+QjsX5x7r9wh0A8oWdoLSxQ3/oTVtN4UOPUJAA==" length="3735143" type="application/octet-stream"/>
+    </item>
+    <item>
+      <title>Unwrap 1.1</title>
       <pubDate>Thu, 24 Sep 2026 17:07:38 -0000</pubDate>
       <sparkle:version>15</sparkle:version>
       <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
