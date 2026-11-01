@@ -6,13 +6,13 @@
 <title>Privacy Policy — Unwrap</title>
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
-<meta name="description" content="Informativa sulla privacy di Unwrap, l'app per macOS che apre i file .p7m e XML.">
+<meta name="description" content="Informativa sulla privacy di Unwrap, l'app per macOS e Windows che apre i file .p7m e XML.">
 <link rel="canonical" href="https://unwrapapp.it/privacy.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Unwrap">
 <meta property="og:url" content="https://unwrapapp.it/privacy.html">
 <meta property="og:title" content="Privacy Policy — Unwrap">
-<meta property="og:description" content="Informativa sulla privacy di Unwrap, l'app per macOS che apre i file .p7m e XML.">
+<meta property="og:description" content="Informativa sulla privacy di Unwrap, l'app per macOS e Windows che apre i file .p7m e XML.">
 <meta property="og:image" content="https://unwrapapp.it/icon.png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
@@ -228,9 +228,9 @@
     <div class="prose">
       <p class="nav"><a href="index.html">&larr; Assistenza Unwrap</a></p>
       <h1>Privacy Policy — Unwrap</h1>
-      <p class="subtitle">Ultimo aggiornamento: settembre 2026</p>
+      <p class="subtitle">Ultimo aggiornamento: novembre 2026</p>
 
-      <p>Unwrap è un'app per macOS che apre file <code>.p7m</code> (buste
+      <p>Unwrap è un'app per macOS e Windows che apre file <code>.p7m</code> (buste
       firmate CAdES/PKCS#7) e ne mostra il contenuto. Questa pagina descrive
       quali dati l'app tratta e come.</p>
 
@@ -242,11 +242,14 @@
 
       <h2>Elaborazione dei file</h2>
       <p>L'apertura e l'estrazione dei file <code>.p7m</code> avvengono
-      <strong>interamente sul tuo Mac</strong>, usando solo il framework di
+      <strong>interamente sul tuo computer</strong>; su Mac, usando solo il framework di
       sistema <code>Security</code> di Apple. I file che apri non lasciano mai
       il dispositivo. Il contenuto estratto resta in memoria e viene scritto
       su disco solo quando scegli tu di salvarlo, esportarlo o aprirlo con
       un'altra app.</p>
+      <p>Su Windows, anche «Mostra nella cartella» e il trascinamento verso altre
+      app creano copie temporanee locali, in una cartella privata dell'app
+      svuotata a ogni avvio.</p>
 
       <h2>Quando l'app usa la rete</h2>
       <p>Unwrap richiede l'autorizzazione di rete solo per queste funzioni,
@@ -255,7 +258,7 @@
     <ul>
       <li><strong>Fatture elettroniche</strong>Al primo utilizzo scarica
       una volta sola il foglio di stile pubblico per impaginare la fattura, e
-      lo conserva in cache sul Mac. La fonte è quella scelta nelle impostazioni
+      lo conserva in cache sul computer. La fonte è quella scelta nelle impostazioni
       dell'app:
       <a href="https://www.assosoftware.it" target="_blank" rel="noopener">assosoftware.it</a>
       oppure l'Agenzia delle Entrate
@@ -267,7 +270,14 @@
       per controllare la validità del certificato di firma del documento.
       Queste richieste riguardano il certificato del documento, non la tua
       identità.</li>
-      <li><strong>Aggiornamenti dell'app</strong> (solo nella versione scaricata
+      <li><strong>Aggiornamenti dell'app su Windows</strong>Con la frequenza che
+      scegli nelle Impostazioni (di serie, una volta al mese; puoi scegliere ogni
+      giorno, ogni settimana o mai), l'app legge un piccolo file dalla pagina delle
+      release su GitHub. Non viene inviato alcun documento né informazioni sul tuo
+      computer; come per ogni richiesta web, GitHub può vedere l'indirizzo IP. Se
+      c'è una versione nuova, l'app la scarica e la installa solo se confermi, e
+      rifiuta un aggiornamento con firma digitale non valida.</li>
+      <li><strong>Aggiornamenti dell'app su Mac</strong> (solo nella versione scaricata
       dal sito, non in quella del Mac App Store): l'app controlla se esiste
       una versione più recente con Sparkle, un componente open source di
       aggiornamento. Con la frequenza che scegli nelle Impostazioni (di serie,
@@ -285,15 +295,19 @@
       pagina PayPal esterna, gestita da PayPal, non da Unwrap.</li>
     </ul>
     <div class="prose">
-      <p>Se non usi queste funzioni (e, nella versione dal sito, se scegli «Mai»
+      <p>Se non usi queste funzioni (e, nelle versioni scaricate dal sito, se scegli «Mai»
       per gli aggiornamenti), l'app non effettua alcuna richiesta di rete. L'estensione Quick Look (anteprima nel Finder) non ha accesso
       alla rete.</p>
 
       <h2>Permessi del sistema</h2>
-      <p>Unwrap gira in <strong>App Sandbox</strong> e accede solo ai file
+      <p>Su Mac, Unwrap gira in <strong>App Sandbox</strong> e accede solo ai file
       che apri esplicitamente (doppio clic, drag & drop, "Apri con" o
       selezione da finestra di dialogo). Non ha accesso generico al disco,
       non legge altri file o cartelle.</p>
+      <p>Su Windows, Unwrap è una normale applicazione desktop: l'installazione
+      richiede la conferma dell'amministratore e l'app non gira in una sandbox.
+      Le impostazioni sono salvate sul computer, nella cartella
+      <code>%APPDATA%\Unwrap</code>.</p>
 
       <h2>Minori</h2>
       <p>Unwrap non è rivolta specificamente ai minori e non raccoglie
@@ -315,9 +329,9 @@
     <div class="prose">
       <p class="nav"><a href="index.html">&larr; Unwrap Support</a></p>
       <h1>Privacy Policy — Unwrap</h1>
-      <p class="subtitle">Last updated: September 2026</p>
+      <p class="subtitle">Last updated: November 2026</p>
 
-      <p>Unwrap is a macOS app that opens <code>.p7m</code> files (signed
+      <p>Unwrap is a macOS and Windows app that opens <code>.p7m</code> files (signed
       CAdES/PKCS#7 envelopes) and shows their content. This page describes
       what data the app processes and how.</p>
 
@@ -329,10 +343,13 @@
 
       <h2>File processing</h2>
       <p>Opening and extracting <code>.p7m</code> files happens
-      <strong>entirely on your Mac</strong>, using only Apple's system
+      <strong>entirely on your computer</strong>; on Mac, using only Apple's system
       <code>Security</code> framework. Files you open never leave the
       device. Extracted content stays in memory and is only written to disk
       when you choose to save, export, or open it with another app.</p>
+      <p>On Windows, "Show in folder" and dragging to other apps also create
+      local temporary copies, in a private app folder that is emptied at every
+      launch.</p>
 
       <h2>When the app uses the network</h2>
       <p>Unwrap requests network access only for these features, all
@@ -351,7 +368,14 @@
       Lists to check the validity of the document's signing certificate.
       These requests concern the document's certificate, not your
       identity.</li>
-      <li><strong>App updates</strong> (only in the version downloaded from the
+      <li><strong>App updates on Windows</strong>At the frequency you choose in
+      Settings (by default once a month; you can pick daily, weekly or never), the
+      app reads a small file from the GitHub releases page. No documents and no
+      information about your computer are sent; as with any web request, GitHub
+      can see the IP address. If a new version exists, the app downloads and
+      installs it only if you confirm, and rejects an update with an invalid
+      digital signature.</li>
+      <li><strong>App updates on Mac</strong> (only in the version downloaded from the
       website, not the Mac App Store one): the app checks for a newer version
       using Sparkle, an open-source update component. At the frequency you
       choose in Settings (by default once a month; you can pick daily, weekly
@@ -368,15 +392,19 @@
       external PayPal page, handled by PayPal, not by Unwrap.</li>
     </ul>
     <div class="prose">
-      <p>If you don't use these features (and, in the website version, choose
+      <p>If you don't use these features (and, in the versions downloaded from the website, choose
       "Never" for updates), the app makes no network requests at all. The Quick Look extension (Finder preview) has no
       network access.</p>
 
       <h2>System permissions</h2>
-      <p>Unwrap runs in an <strong>App Sandbox</strong> and only accesses
+      <p>On Mac, Unwrap runs in an <strong>App Sandbox</strong> and only accesses
       files you explicitly open (double-click, drag & drop, "Open With", or
       a file picker). It has no generic disk access and does not read other
       files or folders.</p>
+      <p>On Windows, Unwrap is a regular desktop application: installation
+      requires administrator confirmation and the app does not run in a sandbox.
+      Settings are stored on your computer, in the
+      <code>%APPDATA%\Unwrap</code> folder.</p>
 
       <h2>Children</h2>
       <p>Unwrap is not directed at children and does not knowingly collect

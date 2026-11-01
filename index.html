@@ -6,13 +6,13 @@
 <title>Unwrap - P7M e XML Viewer</title>
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
-<meta name="description" content="App per macOS che apre velocemente i file .p7m e le fatture elettroniche XML: doppio click per aprire, spazio per l'anteprima.">
+<meta name="description" content="App per macOS e Windows che apre velocemente i file .p7m e le fatture elettroniche XML con un doppio click.">
 <link rel="canonical" href="https://unwrapapp.it/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Unwrap">
 <meta property="og:url" content="https://unwrapapp.it/">
 <meta property="og:title" content="Unwrap - P7M e XML Viewer">
-<meta property="og:description" content="App per macOS che apre velocemente i file .p7m e le fatture elettroniche XML: doppio click per aprire, spazio per l'anteprima.">
+<meta property="og:description" content="App per macOS e Windows che apre velocemente i file .p7m e le fatture elettroniche XML con un doppio click.">
 <meta property="og:image" content="https://unwrapapp.it/icon.png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
@@ -193,6 +193,11 @@
   }
   /* Pulsante di download principale: pillola scura (chiara in dark mode)
      con icona + testo su due righe, sullo stile di Arc, Raycast, Notion. */
+  .download-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 12px;
+  }
   .download-btn {
     display: inline-flex;
     align-items: center;
@@ -376,20 +381,29 @@
     <img class="icon" src="icon.png" alt="Icona di Unwrap">
     <div class="prose">
       <h1>Unwrap — P7M e XML Viewer</h1>
-      <p class="subtitle"><strong>App per macOS che apre <em>velocemente</em> i file .p7m.</strong><br>Apri con un doppio click, visualizza l'anteprima con spazio</p>
-      <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest/download/Unwrap.dmg">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="dl-text"><strong>Scarica per Mac</strong><small>macOS 27+ · Apple Silicon</small></span>
-      </a>
-      <p class="download-meta">Gratuita · <a href="https://github.com/frabolla/unwrap-macOS-release/releases">Note di rilascio</a></p>
+      <p class="subtitle"><strong>App per macOS e Windows che apre <em>velocemente</em> i file .p7m.</strong><br>Apri con un doppio click; su Mac, visualizza l'anteprima con spazio</p>
+      <div class="download-row">
+        <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest/download/Unwrap.dmg">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="dl-text"><strong>Scarica per Mac</strong><small>macOS 27+ · Apple Silicon</small></span>
+        </a>
+        <a class="download-btn" href="https://github.com/frabolla/unwrap-win-release/releases/latest">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="dl-text"><strong>Scarica per Windows</strong><small>Windows 11 · x64 e ARM64 · Beta</small></span>
+        </a>
+      </div>
+      <p class="download-meta">Gratuita · Note di rilascio: <a href="https://github.com/frabolla/unwrap-macOS-release/releases">Mac</a>, <a href="https://github.com/frabolla/unwrap-win-release/releases">Windows</a><br>La versione per Windows è in beta: Windows può mostrare un avviso all'avvio dell'installer. <a href="#windows-it">Come installarla</a></p>
       <p>Con un doppio clic mostra subito il contenuto: PDF, fattura elettronica
       impaginata, XML con sintassi colorata, testo o immagine — senza il
       solito giro verifica → estrazione → apertura con altri strumenti.
-      Tutto elaborato in locale sul Mac, nessun file lascia il dispositivo.
-      Si integra anche con il Finder: basta selezionare un <code>.p7m</code> e
+      Tutto elaborato in locale sul tuo computer, nessun file lascia il dispositivo.
+      Su Mac si integra anche con il Finder: basta selezionare un <code>.p7m</code> e
       premere la barra spaziatrice per vederne l'anteprima con Quick Look,
       senza nemmeno aprire l'app.</p>
     </div>
@@ -403,15 +417,16 @@
 
     <h2>Come iniziare</h2>
     <ul>
-      <li><strong>1. Associa i file .p7m a Unwrap</strong> La prima volta, fai clic con il tasto destro su un file <code>.p7m</code>, scegli "Ottieni informazioni", apri la sezione "Apri con", seleziona Unwrap e fai clic su "Modifica tutti" per renderlo l'app predefinita. Da quel momento basterà il doppio clic per aprirlo sempre con Unwrap.</li>
+      <li><strong>1. Associa i file .p7m a Unwrap</strong> Su Mac, la prima volta, fai clic con il tasto destro su un file <code>.p7m</code>, scegli "Ottieni informazioni", apri la sezione "Apri con", seleziona Unwrap e fai clic su "Modifica tutti" per renderlo l'app predefinita. Da quel momento basterà il doppio clic per aprirlo sempre con Unwrap. Su Windows non serve questo passaggio: dopo l'installazione il doppio clic su un <code>.p7m</code> o <code>.m7m</code> apre già Unwrap.</li>
       <li><strong>2. Estrai il contenuto in un attimo</strong> Una volta aperto il file, puoi salvare o trascinare fuori il contenuto (PDF, fattura, XML, immagine) in pochi secondi, senza passaggi intermedi.</li>
     </ul>
 
     <h2>Domande frequenti</h2>
     <ul>
       <li><strong>Cos'è un file .p7m?</strong> È un documento (PDF, fattura elettronica, XML, immagine...) racchiuso in una "busta" firmata digitalmente secondo lo standard CAdES/PKCS#7, usato in Italia per fatture elettroniche, PEC e comunicazioni con la Pubblica Amministrazione. Unwrap apre la busta e mostra subito il contenuto.</li>
-      <li><strong>Requisiti</strong>macOS 27 "Golden Gate" o successivo, Mac con Apple Silicon.</li>
-      <li><strong>I miei file lasciano il Mac?</strong> No: l'estrazione e la lettura avvengono interamente in locale. La rete è usata solo per il foglio di stile delle fatture elettroniche, la verifica facoltativa della firma (OCSP/CRL) e il link "Dona".</li>
+      <li><strong>Requisiti</strong>Mac: macOS 27 "Golden Gate" o successivo, con Apple Silicon. Windows: Windows 11, processore x64 o ARM64.</li>
+      <li id="windows-it"><strong>Come installo la versione per Windows?</strong> Dalla pagina di download scarica <code>Unwrap-…-win-x64-Setup.exe</code> per i PC Intel/AMD oppure <code>Unwrap-…-win-arm64-Setup.exe</code> per i PC ARM64 (per esempio Snapdragon). È una beta e l'installer non ha ancora una firma Authenticode: se Windows mostra «Windows ha protetto il PC», scegli «Ulteriori informazioni» e poi «Esegui comunque». Nelle note di ogni release trovi l'impronta SHA-256 per controllare il file scaricato.</li>
+      <li><strong>I miei file lasciano il computer?</strong> No: l'estrazione e la lettura avvengono interamente in locale. La rete è usata solo per il foglio di stile delle fatture elettroniche, la verifica facoltativa della firma (OCSP/CRL), la ricerca degli aggiornamenti e il link "Dona".</li>
       <li><strong>Cos'è il banner donazioni?</strong> Un invito occasionale, disattivabile nelle Impostazioni, a sostenere volontariamente lo sviluppo tramite un link PayPal esterno. Non sblocca nessuna funzionalità.</li>
     </ul>
 
@@ -439,19 +454,28 @@
     <img class="icon" src="icon.png" alt="Unwrap icon">
     <div class="prose">
       <h1>Unwrap — P7M and XML Viewer</h1>
-      <p class="subtitle"><strong>A macOS app that opens .p7m files <em>quickly</em>.</strong><br>Open with a double-click, preview with the spacebar</p>
-      <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest/download/Unwrap.dmg">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="dl-text"><strong>Download for Mac</strong><small>macOS 27+ · Apple Silicon</small></span>
-      </a>
-      <p class="download-meta">Free · <a href="https://github.com/frabolla/unwrap-macOS-release/releases">Release notes</a></p>
+      <p class="subtitle"><strong>A macOS and Windows app that opens .p7m files <em>quickly</em>.</strong><br>Open with a double-click; on Mac, preview with the spacebar</p>
+      <div class="download-row">
+        <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest/download/Unwrap.dmg">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="dl-text"><strong>Download for Mac</strong><small>macOS 27+ · Apple Silicon</small></span>
+        </a>
+        <a class="download-btn" href="https://github.com/frabolla/unwrap-win-release/releases/latest">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="dl-text"><strong>Download for Windows</strong><small>Windows 11 · x64 and ARM64 · Beta</small></span>
+        </a>
+      </div>
+      <p class="download-meta">Free · Release notes: <a href="https://github.com/frabolla/unwrap-macOS-release/releases">Mac</a>, <a href="https://github.com/frabolla/unwrap-win-release/releases">Windows</a><br>The Windows version is in beta: Windows may show a warning when the installer starts. <a href="#windows-en">How to install it</a></p>
       <p>One double-click shows the content right away: PDF, a nicely formatted
       e-invoice, syntax-highlighted XML, text or an image — instead of the
       usual verify → extract → open routine with other tools. Everything is
-      processed locally on your Mac, no file ever leaves the device. It also
+      processed locally on your computer, no file ever leaves the device. On Mac it also
       integrates with the Finder: select a <code>.p7m</code> and press the
       spacebar for a Quick Look preview, without even opening the app.</p>
     </div>
@@ -465,15 +489,16 @@
 
     <h2>Getting Started</h2>
     <ul>
-      <li><strong>1. Associate .p7m files with Unwrap</strong> The first time, right-click a <code>.p7m</code> file, choose "Get Info," expand "Open with," select Unwrap, then click "Change All..." to make it the default app. From then on, a double-click will always open it with Unwrap.</li>
+      <li><strong>1. Associate .p7m files with Unwrap</strong> On Mac, the first time, right-click a <code>.p7m</code> file, choose "Get Info," expand "Open with," select Unwrap, then click "Change All..." to make it the default app. From then on, a double-click will always open it with Unwrap. On Windows this step isn't needed: after installation, double-clicking a <code>.p7m</code> or <code>.m7m</code> file already opens Unwrap.</li>
       <li><strong>2. Extract the content in a snap</strong> Once the file is open, you can save or drag out the content (PDF, e-invoice, XML, image) in a few seconds, with no extra steps.</li>
     </ul>
 
     <h2>FAQ</h2>
     <ul>
       <li><strong>What is a .p7m file?</strong> It's a document (PDF, e-invoice, XML, image...) wrapped in a digitally signed "envelope" following the CAdES/PKCS#7 standard, widely used in Italy for electronic invoices, certified email (PEC) and communications with public administration. Unwrap opens the envelope and shows the content right away.</li>
-      <li><strong>Requirements</strong>macOS 27 "Golden Gate" or later, Apple Silicon Mac.</li>
-      <li><strong>Does my data leave the Mac?</strong> No: extraction and reading happen entirely on-device. Network access is only used for the invoice stylesheet, the optional signature check (OCSP/CRL), and the "Donate" link.</li>
+      <li><strong>Requirements</strong>Mac: macOS 27 "Golden Gate" or later, Apple Silicon. Windows: Windows 11, x64 or ARM64 processor.</li>
+      <li id="windows-en"><strong>How do I install the Windows version?</strong> From the download page, get <code>Unwrap-…-win-x64-Setup.exe</code> for Intel/AMD PCs or <code>Unwrap-…-win-arm64-Setup.exe</code> for ARM64 PCs (Snapdragon, for example). It's a beta and the installer doesn't have an Authenticode signature yet: if Windows shows "Windows protected your PC," choose "More info" and then "Run anyway." The notes of each release list the SHA-256 fingerprint to check the downloaded file.</li>
+      <li><strong>Does my data leave the computer?</strong> No: extraction and reading happen entirely on-device. Network access is only used for the invoice stylesheet, the optional signature check (OCSP/CRL), the update check, and the "Donate" link.</li>
       <li><strong>What is the donation banner?</strong> An occasional, dismissible prompt (can be turned off in Settings) to voluntarily support development via an external PayPal link. It never unlocks any feature.</li>
     </ul>
 
