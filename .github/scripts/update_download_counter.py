@@ -61,18 +61,29 @@ def record_snapshot(snapshots, today, totals):
     return snapshots + [snapshot]
 
 
-def downloads_in_window(snapshots, today, days, keys):
+def count_increases(snapshots, key):
+    """Somma gli aumenti tra rilevazioni consecutive.
+
+    Sostituire o eliminare un file azzera il suo contatore su GitHub: i cali non
+    vanno sottratti, altrimenti cancellerebbero download già contati.
+    """
+    return sum(max(after[key] - before[key], 0) for before, after in zip(snapshots, snapshots[1:]))
+
+
+def downloads_in_window(snapshots, today, days, key):
     """Download negli ultimi `days` giorni, None se la raccolta è troppo recente."""
     cutoff = (today - datetime.timedelta(days=days)).isoformat()
-    baseline = None
-    for snapshot in snapshots:
+    start = None
+    for index, snapshot in enumerate(snapshots):
         if snapshot["date"] <= cutoff:
-            baseline = snapshot
-    if baseline is None:
+            start = index
+    if start is None:
         return None
-    current = snapshots[-1]
-    # Eliminare una release può far scendere il totale: il conteggio non va sotto zero.
-    return max(sum(current[key] - baseline[key] for key in keys), 0)
+    return count_increases(snapshots[start:], key)
+
+
+def downloads_since_start(snapshots, key):
+    return snapshots[0][key] + count_increases(snapshots, key)
 
 
 def render_table(snapshots, today):
@@ -82,9 +93,9 @@ def render_table(snapshots, today):
     for label, keys in rows:
         cells = []
         for days in WINDOWS_DAYS:
-            count = downloads_in_window(snapshots, today, days, keys)
-            cells.append(COLLECTING if count is None else str(count))
-        cells.append(str(sum(snapshots[-1][key] for key in keys)))
+            counts = [downloads_in_window(snapshots, today, days, key) for key in keys]
+            cells.append(COLLECTING if counts[0] is None else str(sum(counts)))
+        cells.append(str(sum(downloads_since_start(snapshots, key) for key in keys)))
         lines.append(f"| {label} | " + " | ".join(cells) + " |")
     return "\n".join(lines)
 

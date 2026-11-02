@@ -23,11 +23,14 @@ pubblicata il 23/09/2026, asset `Unwrap.dmg`.
       Developer ID`.
 
 ## Aggiornamenti automatici (Sparkle)
-- [ ] Integrare [Sparkle](https://sparkle-project.org) nell'app per
+- [x] Integrare [Sparkle](https://sparkle-project.org) nell'app per
       permettere l'auto-update fuori dal Mac App Store.
-- [ ] Generare e pubblicare il feed appcast (XML) a ogni release, con
-      changelog.
-- [ ] Firmare gli update con la chiave EdDSA di Sparkle.
+- [x] Generare e pubblicare il feed appcast (XML) a ogni release.
+- [x] Firmare gli update con la chiave EdDSA di Sparkle.
+- [ ] Aggiungere il changelog alle voci dell'appcast.
+- [ ] Pubblicare ogni build con un tag nuovo, senza sostituire il file di
+      una release esistente: la sostituzione azzera il contatore dei download
+      e invalida la firma delle voci già nell'appcast.
 
 ## Distribuzione via Homebrew
 - [ ] Creare una formula Homebrew **cask** per Unwrap, così l'app si

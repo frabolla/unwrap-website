@@ -14,41 +14,5 @@
       <link>https://github.com/frabolla/unwrap-macOS-release/releases/tag/v1.1</link>
       <enclosure url="https://github.com/frabolla/unwrap-macOS-release/releases/download/v1.1/Unwrap.dmg" sparkle:edSignature="2B9PUL16yTvkSNCeOuZxM7TbaZY/SeplhnKAUTqvvaaSRt8flfzi8jdQOF3+ZKoV7hbnVkGhfF43ceoXtH7pBA==" length="4026984" type="application/octet-stream"/>
     </item>
-    <item>
-      <title>Unwrap 1.1</title>
-      <pubDate>Thu, 29 Oct 2026 21:26:41 -0000</pubDate>
-      <sparkle:version>19</sparkle:version>
-      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-      <link>https://github.com/frabolla/unwrap-macOS-release/releases/tag/v1.1</link>
-      <enclosure url="https://github.com/frabolla/unwrap-macOS-release/releases/download/v1.1/Unwrap.dmg" sparkle:edSignature="rlWelCQ6LQ40R9gXXcUza66ZUst00DG1Rz6ERCHN0nNRvpCkcgh08/AGJspETcbCbXLZsmp1WcBXfscUdrnRDA==" length="3976808" type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Unwrap 1.1</title>
-      <pubDate>Thu, 22 Oct 2026 15:42:58 -0000</pubDate>
-      <sparkle:version>18</sparkle:version>
-      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-      <link>https://github.com/frabolla/unwrap-macOS-release/releases/tag/v1.1</link>
-      <enclosure url="https://github.com/frabolla/unwrap-macOS-release/releases/download/v1.1/Unwrap.dmg" sparkle:edSignature="xqU5hyhwMPbBTYW7WvRqLK91TNhb3COvNxibw+ErQvbz31AyrYkFNtwNf66R6KcJC/QDW4VQdaV9v9BPu6M1Cg==" length="3952744" type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Unwrap 1.1</title>
-      <pubDate>Mon, 05 Oct 2026 13:22:10 -0000</pubDate>
-      <sparkle:version>16</sparkle:version>
-      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-      <link>https://github.com/frabolla/unwrap-macOS-release/releases/tag/v1.1</link>
-      <enclosure url="https://github.com/frabolla/unwrap-macOS-release/releases/download/v1.1/Unwrap.dmg" sparkle:edSignature="vVIDKv1LcHkgniMDBpzPmHPBKcqn4o0FYw1xKhipf8oFK5jl+QjsX5x7r9wh0A8oWdoLSxQ3/oTVtN4UOPUJAA==" length="3735143" type="application/octet-stream"/>
-    </item>
-    <item>
-      <title>Unwrap 1.1</title>
-      <pubDate>Thu, 24 Sep 2026 17:07:38 -0000</pubDate>
-      <sparkle:version>15</sparkle:version>
-      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-      <link>https://github.com/frabolla/unwrap-macOS-release/releases/tag/v1.1</link>
-      <enclosure url="https://github.com/frabolla/unwrap-macOS-release/releases/download/v1.1/Unwrap.dmg" sparkle:edSignature="REfJECOY1dj3FvsScgNXyZuAtAArSvF9QAeQXyDxh7SevYhJqXBewMsR9MjjUUM2V0unYEN1WHsKz/Xt7d7OCw==" length="3678823" type="application/octet-stream"/>
-    </item>
   </channel>
 </rss>
