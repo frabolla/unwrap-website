@@ -8,9 +8,9 @@ Sito di [Unwrap](https://unwrapapp.it/), l'app per macOS e Windows che apre i fi
 
 | | Ultimi 7 giorni | Ultimi 30 giorni | Dall'inizio |
 |---|---:|---:|---:|
-| Mac | in raccolta | in raccolta | 6 |
-| Windows | in raccolta | in raccolta | 16 |
-| **Totale** | in raccolta | in raccolta | 22 |
+| Mac | in raccolta | in raccolta | 12 |
+| Windows | in raccolta | in raccolta | 19 |
+| **Totale** | in raccolta | in raccolta | 31 |
 
 <!-- download-counter:end -->
 
