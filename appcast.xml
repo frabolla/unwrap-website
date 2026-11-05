@@ -6,6 +6,15 @@
     <description>Aggiornamenti di Unwrap (versione per il sito)</description>
     <language>it</language>
     <item>
+      <title>Unwrap 1.3</title>
+      <pubDate>Thu, 05 Nov 2026 13:53:10 -0000</pubDate>
+      <sparkle:version>27</sparkle:version>
+      <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/frabolla/unwrap-macOS-release/releases/tag/v1.3</link>
+      <enclosure url="https://github.com/frabolla/unwrap-macOS-release/releases/download/v1.3/Unwrap.dmg" sparkle:edSignature="/O/Rpnvl2pRbValD1sEdm8Nu8eeA4B04V+wShRYBDbOnfRsULZUttxabr8jnUasem1kbHOabXyQ/b63m601vAw==" length="4180583" type="application/octet-stream"/>
+    </item>
+    <item>
       <title>Unwrap 1.2.1</title>
       <pubDate>Tue, 03 Nov 2026 15:02:03 -0000</pubDate>
       <sparkle:version>26</sparkle:version>
