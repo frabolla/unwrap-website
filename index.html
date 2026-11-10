@@ -33,28 +33,20 @@
   if (initialLang === 'en') document.documentElement.lang = 'en';
 </script>
 <link rel="stylesheet" href="site.css">
-<style>
-  h1 { font-size: 34px; }
-  .subtitle {
-    font-size: 20px;
-    max-width: 36em;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 48px 0 16px;
-  }
-  ul {
-    margin: 0;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-</style>
 </head>
 <body>
-<div class="hero">
-<main>
-  <div class="toolbar">
-    <img class="icon" src="icon-256.png" alt="Unwrap">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand-link" href="index.html">
+      <img class="brand-icon" src="icon-256.png" alt="Unwrap">
+      <span>Unwrap</span>
+    </a>
     <div class="toolbar-controls">
+      <nav class="header-nav" aria-label="Navigazione">
+        <a href="index.html" class="active">Home</a>
+        <a href="download.html">Download</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
       <div class="lang-toggle">
         <button type="button" id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
         <button type="button" id="btn-en" onclick="setLang('en')">English</button>
@@ -70,9 +62,12 @@
       </button>
     </div>
   </div>
+</header>
 
+<main>
+  <!-- ======================= ITALIANO ======================= -->
   <div data-lang="it">
-    <div class="prose">
+    <section class="hero-section">
       <h1>Unwrap — P7M, Fatture e PEC Viewer</h1>
       <p class="subtitle"><strong>Apri in un attimo i file firmati <code>.p7m</code> e <code>.m7m</code>, le fatture elettroniche e i messaggi PEC.</strong><br>Disponibile per macOS, Windows, Android, iPhone e iPad.</p>
       <div class="download-row">
@@ -85,13 +80,13 @@
         </a>
       </div>
       <p class="download-meta">Attualmente in <strong>beta</strong> e <strong>gratuita</strong> &middot; Sarà supportata da donazioni volontarie e pubblicità interna all'app &middot; <a href="download.html">Vai alla pagina di download &rarr;</a></p>
-      <p>Con un doppio clic sul computer o un tocco su telefono e tablet, Unwrap apre la
+      <p class="hero-lead">Con un doppio clic sul computer o un tocco su telefono e tablet, Unwrap apre la
       busta firmata e mostra subito il documento che contiene: un PDF sfogliabile, una
       fattura elettronica impaginata su fogli A4 (italiana o europea), un messaggio PEC con
       i suoi allegati, un file XML o JSON colorato, un testo o un'immagine — senza il solito
       giro verifica &rarr; estrazione &rarr; salvataggio con altri programmi. Tutto viene
       elaborato in memoria sul tuo dispositivo: nessun documento viene mai inviato in rete.</p>
-    </div>
+    </section>
 
     <h2>Funzionalità e particolarità</h2>
     <ul>
@@ -145,16 +140,12 @@
       </li>
     </ul>
 
-    <h2>Assistenza</h2>
-    <div class="prose">
+    <h2>Assistenza e Sostegno</h2>
+    <div class="support-grid">
       <div class="card">
         <strong>Hai un problema o una domanda?</strong>
         <p>Scrivimi direttamente, rispondo io: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Assistenza">francesco.tarini@gmail.com</a></p>
       </div>
-    </div>
-
-    <h2>Sostieni lo sviluppo</h2>
-    <div class="prose">
       <div class="card">
         <strong>Ti è utile? Offrimi un caffè ☕</strong>
         <p>Unwrap è attualmente in beta e gratuita, sviluppata in modo indipendente; sarà sostenuta da donazioni volontarie e pubblicità interna all'app. Se ti fa risparmiare tempo, una donazione libera tramite PayPal aiuta a mantenerla aggiornata.</p>
@@ -165,8 +156,9 @@
     <footer>Unwrap &middot; app indipendente, sviluppata da <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="download.html">Download e Release</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
   </div>
 
+  <!-- ======================= ENGLISH ======================= -->
   <div data-lang="en">
-    <div class="prose">
+    <section class="hero-section">
       <h1>Unwrap — P7M, E-Invoice and PEC Viewer</h1>
       <p class="subtitle"><strong>Open digitally signed <code>.p7m</code> and <code>.m7m</code> files, electronic invoices, and PEC emails in an instant.</strong><br>Available for macOS, Windows, Android, iPhone, and iPad.</p>
       <div class="download-row">
@@ -179,13 +171,13 @@
         </a>
       </div>
       <p class="download-meta">Currently in <strong>beta</strong> and <strong>free</strong> &middot; Will be supported by voluntary donations and in-app advertising &middot; <a href="download.html">Go to the download page &rarr;</a></p>
-      <p>With a double-click on your computer or a tap on your phone or tablet, Unwrap opens
+      <p class="hero-lead">With a double-click on your computer or a tap on your phone or tablet, Unwrap opens
       the signed envelope and immediately displays the document inside: a multi-page PDF, an
       A4-formatted electronic invoice (Italian or European), a PEC certified email with its
       attachments, syntax-highlighted XML or JSON, searchable text, or an image — skipping
       the tedious verify &rarr; extract &rarr; save routine of traditional tools. Everything is
       processed in memory on your device: no file ever leaves your device.</p>
-    </div>
+    </section>
 
     <h2>Features and highlights</h2>
     <ul>
@@ -239,16 +231,12 @@
       </li>
     </ul>
 
-    <h2>Support</h2>
-    <div class="prose">
+    <h2>Support &amp; Development</h2>
+    <div class="support-grid">
       <div class="card">
         <strong>Got an issue or a question?</strong>
         <p>Write to me directly, I answer personally: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Support">francesco.tarini@gmail.com</a></p>
       </div>
-    </div>
-
-    <h2>Support development</h2>
-    <div class="prose">
       <div class="card">
         <strong>Finding it useful? Buy me a coffee ☕</strong>
         <p>Unwrap is currently in beta and free, developed independently; it will be supported by voluntary donations and in-app advertising. If it saves you time, a voluntary donation via PayPal helps keep it up to date.</p>
@@ -259,7 +247,6 @@
     <footer>Unwrap &middot; independent app, developed by <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="download.html">Download &amp; Releases</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
   </div>
 </main>
-</div>
 <script src="site.js"></script>
 </body>
 </html>

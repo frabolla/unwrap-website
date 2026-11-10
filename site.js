@@ -40,8 +40,11 @@ function updateThemeButton() {
     ? (en ? 'Switch to light theme' : 'Passa al tema chiaro')
     : (en ? 'Switch to dark theme' : 'Passa al tema scuro');
   var button = document.getElementById('theme-toggle');
-  button.title = label;
-  button.setAttribute('aria-label', label);
+  if (button) {
+    button.title = label;
+    button.setAttribute('aria-label', label);
+  }
 }
+
 updateLangControls();
 systemDark.addEventListener('change', updateThemeButton);

@@ -31,28 +31,20 @@
   if (initialLang === 'en') document.documentElement.lang = 'en';
 </script>
 <link rel="stylesheet" href="site.css">
-<style>
-  h1 { font-size: 32px; }
-  .subtitle {
-    font-size: 18px;
-    max-width: 38em;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 48px 0 16px;
-  }
-  ul {
-    margin: 0;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-</style>
 </head>
 <body>
-<div class="hero">
-<main>
-  <div class="toolbar">
-    <a href="index.html" aria-label="Home"><img class="icon" src="icon-256.png" alt="Unwrap"></a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand-link" href="index.html">
+      <img class="brand-icon" src="icon-256.png" alt="Unwrap">
+      <span>Unwrap</span>
+    </a>
     <div class="toolbar-controls">
+      <nav class="header-nav" aria-label="Navigazione">
+        <a href="index.html">Home</a>
+        <a href="download.html" class="active">Download</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
       <div class="lang-toggle">
         <button type="button" id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
         <button type="button" id="btn-en" onclick="setLang('en')">English</button>
@@ -68,9 +60,11 @@
       </button>
     </div>
   </div>
+</header>
 
+<main>
   <div data-lang="it">
-    <div class="prose">
+    <section class="hero-section">
       <p class="nav"><a href="index.html">&larr; Torna alla home di Unwrap</a></p>
       <h1>Download e Release</h1>
       <p class="subtitle"><strong>Scegli la versione di Unwrap per il tuo dispositivo.</strong><br>Disponibile per macOS, Windows, Android e per iPhone e iPad su TestFlight.</p>
@@ -79,7 +73,7 @@
         <strong>Stato dell'app: Beta gratuita</strong>
         <p style="margin-bottom: 0;">Unwrap è attualmente in <strong>beta</strong> su tutte le piattaforme. Al momento l'applicazione è <strong>completamente gratuita</strong>: per sostenerne lo sviluppo indipendente e i costi di mantenimento, sarà supportata da <strong>donazioni volontarie</strong> e da <strong>pubblicità interna all'app</strong>. I documenti che apri vengono sempre elaborati al 100% in locale sul tuo dispositivo.</p>
       </div>
-    </div>
+    </section>
 
     <h2>Tutte le versioni disponibili</h2>
     <div class="release-grid">
@@ -188,7 +182,7 @@
   </div>
 
   <div data-lang="en">
-    <div class="prose">
+    <section class="hero-section">
       <p class="nav"><a href="index.html">&larr; Back to Unwrap home</a></p>
       <h1>Download &amp; Releases</h1>
       <p class="subtitle"><strong>Choose the Unwrap release for your device.</strong><br>Available for macOS, Windows, Android, and for iPhone &amp; iPad via TestFlight.</p>
@@ -197,7 +191,7 @@
         <strong>App status: Free Beta</strong>
         <p style="margin-bottom: 0;">Unwrap is currently in <strong>beta</strong> across all platforms. Right now the app is <strong>completely free</strong>: to support independent development and maintenance costs, it will be supported by <strong>voluntary donations</strong> and <strong>in-app advertising</strong>. Every document you open is always processed 100% locally on your device.</p>
       </div>
-    </div>
+    </section>
 
     <h2>All available releases</h2>
     <div class="release-grid">
@@ -305,7 +299,6 @@
     <footer>Unwrap &middot; independent app, developed by <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
   </div>
 </main>
-</div>
 <script src="site.js"></script>
 </body>
 </html>

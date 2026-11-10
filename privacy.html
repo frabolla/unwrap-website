@@ -30,49 +30,46 @@
   } catch (e) {}
 </script>
 <link rel="stylesheet" href="site.css">
-<style>
-  h1 { font-size: 30px; }
-  .subtitle { font-size: 16px; }
-  h2 {
-    font-size: 19px;
-    margin: 40px 0 12px;
-  }
-  ul {
-    margin: 0 0 12px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
-  .toolbar {
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 32px;
-  }
-</style>
 </head>
 <body>
-<div class="hero">
-<main>
-  <div class="toolbar">
-    <div class="lang-toggle">
-      <button type="button" id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
-      <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand-link" href="index.html">
+      <img class="brand-icon" src="icon-256.png" alt="Unwrap">
+      <span>Unwrap</span>
+    </a>
+    <div class="toolbar-controls">
+      <nav class="header-nav" aria-label="Navigazione">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="privacy.html" class="active">Privacy</a>
+      </nav>
+      <div class="lang-toggle">
+        <button type="button" id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
+        <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Cambia tema" aria-label="Cambia tema">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle class="theme-core" cx="12" cy="12" r="5" fill="currentColor"/>
+          <circle class="theme-cut" cx="16" cy="8" r="7"/>
+          <g class="theme-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </g>
+        </svg>
+      </button>
     </div>
-    <button type="button" class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Cambia tema" aria-label="Cambia tema">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle class="theme-core" cx="12" cy="12" r="5" fill="currentColor"/>
-        <circle class="theme-cut" cx="16" cy="8" r="7"/>
-        <g class="theme-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
-        </g>
-      </svg>
-    </button>
   </div>
+</header>
 
+<main>
   <div data-lang="it">
-    <div class="prose">
+    <section class="hero-section">
       <p class="nav"><a href="index.html">&larr; Torna a Unwrap</a></p>
       <h1>Privacy Policy — Unwrap</h1>
-      <p class="subtitle">Ultimo aggiornamento: novembre 2026</p>
+      <p class="subtitle" style="margin-bottom: 0;">Ultimo aggiornamento: novembre 2026</p>
+    </section>
 
+    <div class="prose">
       <p>Unwrap è un'app per macOS, Windows, Android e iOS/iPadOS che apre file <code>.p7m</code> e
       <code>.m7m</code> (buste firmate CAdES/PKCS#7 e contenitori marcati temporalmente), fatture
       elettroniche (italiane ed europee) e messaggi email/PEC (<code>.eml</code>), mostrandone subito
@@ -145,7 +142,7 @@
       <li><strong>Link "Dona" e assistenza</strong> Apre il browser di sistema su una
       pagina PayPal esterna (gestita da PayPal, non da Unwrap) o sul tuo client email.</li>
     </ul>
-    <div class="prose">
+    <div class="prose" style="margin-top: 16px;">
       <p>Se non usi queste funzioni (e, nelle versioni scaricate dal sito, se scegli «Mai»
       per gli aggiornamenti), l'app non effettua alcuna richiesta di rete per la lettura dei file. Le estensioni Quick Look (anteprima nel Finder su Mac e nell'app File su iOS) non hanno accesso
       alla rete.</p>
@@ -178,17 +175,19 @@
 
       <h2>Contatti</h2>
       <p>Per domande su questa privacy policy: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Privacy">francesco.tarini@gmail.com</a></p>
-
-      <footer>Unwrap &middot; app indipendente, sviluppata da <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="download.html">Download e Release</a></footer>
     </div>
+
+    <footer>Unwrap &middot; app indipendente, sviluppata da <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="download.html">Download e Release</a></footer>
   </div>
 
   <div data-lang="en">
-    <div class="prose">
+    <section class="hero-section">
       <p class="nav"><a href="index.html">&larr; Back to Unwrap</a></p>
       <h1>Privacy Policy — Unwrap</h1>
-      <p class="subtitle">Last updated: November 2026</p>
+      <p class="subtitle" style="margin-bottom: 0;">Last updated: November 2026</p>
+    </section>
 
+    <div class="prose">
       <p>Unwrap is an app for macOS, Windows, Android, and iOS/iPadOS that opens <code>.p7m</code> and
       <code>.m7m</code> files (signed CAdES/PKCS#7 envelopes and timestamped containers), electronic
       invoices (Italian and European), and email/PEC messages (<code>.eml</code>), showing their
@@ -251,7 +250,7 @@
       <li><strong>&ldquo;Donate&rdquo; and support links</strong> Opens the system browser to an
       external PayPal page (handled by PayPal, not by Unwrap) or your email app.</li>
     </ul>
-    <div class="prose">
+    <div class="prose" style="margin-top: 16px;">
       <p>If you don't use these features (and, in the versions downloaded from the website, choose
       &ldquo;Never&rdquo; for updates), the app makes no network requests for reading files. The Quick Look extensions (Finder preview on Mac and Files preview on iOS) have no
       network access.</p>
@@ -284,12 +283,11 @@
 
       <h2>Contact</h2>
       <p>Questions about this privacy policy: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Privacy">francesco.tarini@gmail.com</a></p>
-
-      <footer>Unwrap &middot; independent app, developed by <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="download.html">Download &amp; Releases</a></footer>
     </div>
+
+    <footer>Unwrap &middot; independent app, developed by <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="download.html">Download &amp; Releases</a></footer>
   </div>
 </main>
-</div>
 <script src="site.js"></script>
 </body>
 </html>
