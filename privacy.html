@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Unwrap</title>
+<title data-en="Privacy Policy — Unwrap">Privacy Policy — Unwrap</title>
 <link rel="icon" type="image/png" href="icon-256.png">
 <link rel="apple-touch-icon" href="icon-256.png">
-<meta name="description" content="Informativa sulla privacy di Unwrap, l'app per macOS e Windows che apre i file .p7m e XML.">
+<meta name="description" content="Informativa sulla privacy di Unwrap, l'app per macOS, Windows, Android, iPhone e iPad che apre i file .p7m, .m7m, le fatture elettroniche XML e i messaggi PEC.">
 <link rel="canonical" href="https://unwrapapp.it/privacy.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Unwrap">
 <meta property="og:url" content="https://unwrapapp.it/privacy.html">
 <meta property="og:title" content="Privacy Policy — Unwrap">
-<meta property="og:description" content="Informativa sulla privacy di Unwrap, l'app per macOS e Windows che apre i file .p7m e XML.">
+<meta property="og:description" content="Informativa sulla privacy di Unwrap, l'app per macOS, Windows, Android, iPhone e iPad che apre i file .p7m, .m7m, le fatture elettroniche XML e i messaggi PEC.">
 <meta property="og:image" content="https://unwrapapp.it/icon.png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
@@ -42,21 +42,10 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
   .toolbar {
-    display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
     margin-bottom: 32px;
   }
-  .nav {
-    margin-bottom: 16px;
-    font-size: 14px;
-  }
-  .nav a {
-    color: var(--muted);
-  }
-  .nav a:hover { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -84,57 +73,61 @@
       <h1>Privacy Policy — Unwrap</h1>
       <p class="subtitle">Ultimo aggiornamento: novembre 2026</p>
 
-      <p>Unwrap è un'app per macOS e Windows che apre file <code>.p7m</code> (buste
-      firmate CAdES/PKCS#7) e ne mostra il contenuto. Questa pagina descrive
-      quali dati l'app tratta e come.</p>
+      <p>Unwrap è un'app per macOS, Windows, Android e iOS/iPadOS che apre file <code>.p7m</code> e
+      <code>.m7m</code> (buste firmate CAdES/PKCS#7 e contenitori marcati temporalmente), fatture
+      elettroniche (italiane ed europee) e messaggi email/PEC (<code>.eml</code>), mostrandone subito
+      il contenuto. Questa pagina descrive quali dati l'app tratta e come.</p>
 
-      <h2>Nessuna raccolta dati</h2>
+      <h2>Nessuna raccolta dei tuoi documenti o dati personali</h2>
       <p>Unwrap <strong>non raccoglie, non trasmette e non vende</strong>
-      alcun dato personale. Non ci sono account, non c'è analytics, non c'è
-      tracciamento pubblicitario, non ci sono SDK di terze parti per la
-      raccolta dati. L'app non sa chi sei e non ha modo di identificarti.</p>
+      alcun dato personale né i documenti che apri. Non ci sono account e non c'è
+      alcun invio dei file a server esterni. L'app è attualmente in beta e gratuita,
+      e lo sviluppo è e sarà supportato da donazioni volontarie e pubblicità interna all'app.</p>
 
       <h2>Elaborazione dei file</h2>
-      <p>L'apertura e l'estrazione dei file <code>.p7m</code> avvengono
-      <strong>interamente sul tuo computer</strong>; su Mac, usando solo il framework di
-      sistema <code>Security</code> di Apple. I file che apri non lasciano mai
-      il dispositivo. Il contenuto estratto resta in memoria e viene scritto
-      su disco solo quando scegli tu di salvarlo, esportarlo o aprirlo con
+      <p>L'apertura e l'estrazione dei file <code>.p7m</code>, <code>.m7m</code>, delle fatture
+      elettroniche e dei messaggi <code>.eml</code> avvengono
+      <strong>interamente sul tuo dispositivo</strong> (computer, smartphone o tablet).
+      I file che apri non lasciano mai il dispositivo. Il contenuto estratto resta in memoria
+      e viene scritto su disco o nella memoria del dispositivo solo quando scegli tu di salvarlo,
+      esportarlo, aggiungerlo alla libreria locale <em>I miei File</em> (su iOS e Android) o aprirlo con
       un'altra app. Un messaggio email (<code>.eml</code>) si legge in una vista chiusa,
-      senza immagini dalla rete né script, e per mostrarlo non serve alcuna copia su
-      disco; l'allegato che apri da un messaggio viene copiato, per il tempo
+      senza immagini dalla rete (salvo caricamento esplicito ove previsto) né script, e per mostrarlo non serve alcuna copia su
+      disco; l'allegato che apri da un messaggio o un file passato a un'altra app viene copiato, per il tempo
       dell'uso, nella cartella temporanea privata dell'app, svuotata a ogni avvio.</p>
-      <p>Su Windows, anche «Mostra nella cartella» e il trascinamento verso altre
+      <p>Su Mac e Windows, anche «Mostra nel Finder / nella cartella» e il trascinamento verso altre
       app creano copie temporanee locali, in una cartella privata dell'app
       svuotata a ogni avvio.</p>
 
       <h2>Quando l'app usa la rete</h2>
       <p>Unwrap richiede l'autorizzazione di rete solo per queste funzioni.
-      Il controllo degli aggiornamenti è attivo di serie e si può disattivare;
-      le altre partono solo quando le usi:</p>
+      Nelle versioni distribuite dal sito, il controllo degli aggiornamenti è attivo di serie e si può disattivare;
+      le altre funzioni di rete partono solo quando le usi:</p>
     </div>
     <ul>
-      <li><strong>Fatture elettroniche</strong>Al primo utilizzo scarica
-      una volta sola il foglio di stile pubblico per impaginare la fattura, e
-      lo conserva in cache sul computer. La fonte è quella scelta nelle impostazioni
+      <li><strong>Fatture elettroniche italiane (FatturaPA)</strong> Al primo utilizzo, dopo il tuo consenso, scarica
+      una volta sola il foglio di stile pubblico per impaginare la fattura e
+      lo conserva in cache sul dispositivo. La fonte è quella scelta nelle impostazioni
       dell'app:
       <a href="https://www.assosoftware.it" target="_blank" rel="noopener">assosoftware.it</a>
       oppure l'Agenzia delle Entrate
       (<a href="https://www.fatturapa.gov.it" target="_blank" rel="noopener">fatturapa.gov.it</a>).
       Non viene inviato alcun dato del file, solo la richiesta di scaricare il
-      foglio di stile.</li>
+      foglio di stile. Le fatture europee (UBL/Peppol, XRechnung, CII, Factur-X/ZUGFeRD, Facturae, KSeF)
+      vengono invece impaginate direttamente dall'app senza scaricare nulla dalla rete.</li>
       <li><strong>Verifica firma…</strong> (funzione a richiesta): interroga
-      i servizi OCSP/CRL degli enti certificatori e le Trusted List eIDAS
+      i servizi OCSP/CRL degli enti certificatori, scarica eventuali certificati intermedi (AIA)
+      e consulta le Trusted List eIDAS (AgID italiana o UE)
       per controllare la validità del certificato di firma del documento.
-      Queste richieste riguardano il certificato del documento, non la tua
+      Queste richieste riguardano esclusivamente il certificato del documento, mai il documento stesso né la tua
       identità.</li>
-      <li><strong>Aggiornamenti dell'app su Windows</strong>Con la frequenza che
+      <li><strong>Aggiornamenti dell'app su Windows e Android</strong> (nelle versioni scaricate dal sito): con la frequenza che
       scegli nelle Impostazioni (di serie, una volta al mese; puoi scegliere ogni
-      giorno, ogni settimana o mai), l'app legge un piccolo file dalla pagina delle
+      giorno, ogni settimana o mai), l'app legge un piccolo file descrittore dalla pagina delle
       release su GitHub. Non viene inviato alcun documento né informazioni sul tuo
-      computer; come per ogni richiesta web, GitHub può vedere l'indirizzo IP. Se
-      c'è una versione nuova, l'app la scarica e la installa solo se confermi, e
-      rifiuta un aggiornamento con firma digitale non valida.</li>
+      dispositivo; come per ogni richiesta web, GitHub può vedere l'indirizzo IP. Se
+      c'è una versione nuova, l'app la scarica e ne propone l'installazione solo se confermi,
+      verificando l'integrità e la firma del pacchetto.</li>
       <li><strong>Aggiornamenti dell'app su Mac</strong> (solo nella versione scaricata
       dal sito, non in quella del Mac App Store): l'app controlla se esiste
       una versione più recente con Sparkle, un componente open source di
@@ -149,35 +142,35 @@
       Se scegli «Mai», l'app non fa alcun controllo finché non premi
       «Cerca aggiornamenti…». Ogni aggiornamento è verificato con una firma
       digitale prima di essere installato.</li>
-      <li><strong>Link "Dona"</strong>Apre il browser di sistema su una
-      pagina PayPal esterna, gestita da PayPal, non da Unwrap.</li>
+      <li><strong>Link "Dona" e assistenza</strong> Apre il browser di sistema su una
+      pagina PayPal esterna (gestita da PayPal, non da Unwrap) o sul tuo client email.</li>
     </ul>
     <div class="prose">
       <p>Se non usi queste funzioni (e, nelle versioni scaricate dal sito, se scegli «Mai»
-      per gli aggiornamenti), l'app non effettua alcuna richiesta di rete. L'estensione Quick Look (anteprima nel Finder) non ha accesso
+      per gli aggiornamenti), l'app non effettua alcuna richiesta di rete per la lettura dei file. Le estensioni Quick Look (anteprima nel Finder su Mac e nell'app File su iOS) non hanno accesso
       alla rete.</p>
 
-      <h2>Permessi del sistema</h2>
-      <p>Su Mac, Unwrap gira in <strong>App Sandbox</strong> e accede solo ai file
-      che apri esplicitamente (doppio clic, drag & drop, "Apri con" o
-      selezione da finestra di dialogo). Non ha accesso generico al disco,
+      <h2>Permessi del sistema e memoria locale</h2>
+      <p>Su <strong>Mac</strong> e su <strong>iOS / iPadOS</strong>, Unwrap gira in <strong>App Sandbox</strong> e accede solo ai file
+      che apri o importi esplicitamente. Non ha accesso generico al disco e
       non legge altri file o cartelle.</p>
-      <p>Su Windows, Unwrap è una normale applicazione desktop: l'installazione
-      richiede la conferma dell'amministratore e l'app non gira in una sandbox.
-      Le impostazioni sono salvate sul computer, nella cartella
+      <p>Su <strong>Android</strong>, Unwrap richiede come unico permesso l'accesso a Internet (per le sole funzioni indicate sopra)
+      e accede esclusivamente ai file che apri tramite il selettore di sistema o da altre app; la libreria interna <em>I miei File</em>
+      risiede nella memoria privata dell'app.</p>
+      <p>Su <strong>Windows</strong>, Unwrap è una normale applicazione desktop: l'installazione
+      richiede la conferma dell'amministratore e le impostazioni sono salvate sul computer nella cartella
       <code>%APPDATA%\Unwrap</code>.</p>
 
       <h2>Sito web e assistenza</h2>
       <p>Questo sito è ospitato su GitHub Pages: come per ogni richiesta web,
-      GitHub può vedere l'indirizzo IP. Il sito non usa cookie né analytics;
+      GitHub può vedere l'indirizzo IP. Il sito non usa cookie di profilazione né analytics;
       la lingua e il tema che scegli restano salvati solo nel tuo browser.</p>
       <p>Se mi scrivi per assistenza, uso il tuo indirizzo email e quello che
       mi scrivi solo per risponderti.</p>
 
       <h2>Minori</h2>
       <p>Unwrap non è rivolta specificamente ai minori e non raccoglie
-      consapevolmente dati di minori, in quanto non raccoglie dati da
-      nessun utente.</p>
+      consapevolmente dati di minori.</p>
 
       <h2>Modifiche a questa policy</h2>
       <p>Eventuali aggiornamenti verranno pubblicati su questa stessa
@@ -186,7 +179,7 @@
       <h2>Contatti</h2>
       <p>Per domande su questa privacy policy: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Privacy">francesco.tarini@gmail.com</a></p>
 
-      <footer>Unwrap &middot; app indipendente, sviluppata da <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹</footer>
+      <footer>Unwrap &middot; app indipendente, sviluppata da <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="download.html">Download e Release</a></footer>
     </div>
   </div>
 
@@ -196,104 +189,103 @@
       <h1>Privacy Policy — Unwrap</h1>
       <p class="subtitle">Last updated: November 2026</p>
 
-      <p>Unwrap is a macOS and Windows app that opens <code>.p7m</code> files (signed
-      CAdES/PKCS#7 envelopes) and shows their content. This page describes
-      what data the app processes and how.</p>
+      <p>Unwrap is an app for macOS, Windows, Android, and iOS/iPadOS that opens <code>.p7m</code> and
+      <code>.m7m</code> files (signed CAdES/PKCS#7 envelopes and timestamped containers), electronic
+      invoices (Italian and European), and email/PEC messages (<code>.eml</code>), showing their
+      content right away. This page describes what data the app processes and how.</p>
 
-      <h2>No data collection</h2>
+      <h2>No collection of your documents or personal data</h2>
       <p>Unwrap does <strong>not collect, transmit, or sell</strong> any
-      personal data. There are no accounts, no analytics, no advertising
-      tracking, and no third-party data-collection SDKs. The app has no way
-      to identify you.</p>
+      personal data or the documents you open. There are no accounts and no files are ever uploaded
+      to external servers. The app is currently in beta and free, and its development is and will be
+      supported by voluntary donations and in-app advertising.</p>
 
       <h2>File processing</h2>
-      <p>Opening and extracting <code>.p7m</code> files happens
-      <strong>entirely on your computer</strong>; on Mac, using only Apple's system
-      <code>Security</code> framework. Files you open never leave the
-      device. Extracted content stays in memory and is only written to disk
-      when you choose to save, export, or open it with another app. An email message
-      (<code>.eml</code>) is read in a closed view, with no network images or scripts, and
-      showing it needs no copy on disk; an attachment you open from a message is copied
-      to the app's private temporary folder, which is emptied at every launch.</p>
-      <p>On Windows, "Show in folder" and dragging to other apps also create
-      local temporary copies, in a private app folder that is emptied at every
-      launch.</p>
+      <p>Opening and extracting <code>.p7m</code>, <code>.m7m</code>, electronic invoices, and
+      <code>.eml</code> messages happens <strong>entirely on your device</strong> (computer, phone, or tablet).
+      Files you open never leave the device. Extracted content stays in memory and is only written to disk
+      or device storage when you choose to save, export, add it to the local <em>My Files</em> library (on iOS and Android),
+      or open it with another app. An email message (<code>.eml</code>) is read in a closed view, with no scripts and no
+      network images (unless explicitly loaded where supported), and showing it needs no copy on disk; an attachment you open from a message
+      or pass to another app is copied to the app's private temporary folder, which is emptied at every launch.</p>
+      <p>On Mac and Windows, &ldquo;Show in Finder / in folder&rdquo; and dragging to other apps also create
+      local temporary copies in a private app folder that is emptied at every launch.</p>
 
       <h2>When the app uses the network</h2>
-      <p>Unwrap requests network access only for these features. The update
-      check is on by default and can be turned off; the others run only when
+      <p>Unwrap requests network access only for these features. In versions downloaded from the website,
+      the update check is on by default and can be turned off; the other network features run only when
       you use them:</p>
     </div>
     <ul>
-      <li><strong>Electronic invoices</strong>On first use, it downloads the
-      public stylesheet once to render the invoice, and caches it locally. The
+      <li><strong>Italian electronic invoices (FatturaPA)</strong> On first use, after your consent, it downloads the
+      public stylesheet once to render the invoice and caches it locally on your device. The
       source is the one selected in the app's settings:
       <a href="https://www.assosoftware.it" target="_blank" rel="noopener">assosoftware.it</a>
       or the Italian Revenue Agency
       (<a href="https://www.fatturapa.gov.it" target="_blank" rel="noopener">fatturapa.gov.it</a>).
-      No file data is sent, only the request to download the stylesheet.</li>
+      No file data is sent, only the request to download the stylesheet. European e-invoices (UBL/Peppol, XRechnung, CII, Factur-X/ZUGFeRD, Facturae, KSeF)
+      are formatted directly by the app offline without downloading anything.</li>
       <li><strong>Verify signature…</strong> (on-demand feature): queries
-      certificate authorities' OCSP/CRL services and the eIDAS Trusted
-      Lists to check the validity of the document's signing certificate.
-      These requests concern the document's certificate, not your
-      identity.</li>
-      <li><strong>App updates on Windows</strong>At the frequency you choose in
-      Settings (by default once a month; you can pick daily, weekly or never), the
-      app reads a small file from the GitHub releases page. No documents and no
-      information about your computer are sent; as with any web request, GitHub
-      can see the IP address. If a new version exists, the app downloads and
-      installs it only if you confirm, and rejects an update with an invalid
-      digital signature.</li>
+      certificate authorities' OCSP/CRL services, fetches missing intermediate certificates (AIA),
+      and checks the eIDAS Trusted Lists (Italian AgID or EU) to verify the validity of the document's signing certificate.
+      These requests concern only the document's certificate, never the document itself or your identity.</li>
+      <li><strong>App updates on Windows and Android</strong> (in versions downloaded from the website): at the frequency you choose in
+      Settings (by default once a month; you can pick daily, weekly, or never), the
+      app reads a small descriptor file from the GitHub releases page. No documents and no
+      information about your device are sent; as with any web request, GitHub
+      can see the IP address. If a new version exists, the app downloads and proposes installing it
+      only if you confirm, verifying the package integrity and signature.</li>
       <li><strong>App updates on Mac</strong> (only in the version downloaded from the
       website, not the Mac App Store one): the app checks for a newer version
       using Sparkle, an open-source update component. At the frequency you
-      choose in Settings (by default once a month; you can pick daily, weekly
+      choose in Settings (by default once a month; you can pick daily, weekly,
       or never), it downloads a small public list from
       <a href="https://unwrapapp.it/appcast.xml" target="_blank" rel="noopener">unwrapapp.it/appcast.xml</a>.
-      No personal data, no documents and no information about your Mac are
-      sent (Sparkle does not send the "system profile"); as with any web
+      No personal data, no documents, and no information about your Mac are
+      sent (Sparkle does not send the &ldquo;system profile&rdquo;); as with any web
       request, the server hosting the file can see the IP address. If a new
       version exists, the app downloads it from GitHub only if you confirm.
-      If you choose "Never", the app makes no check until you press
-      "Check for Updates…". Every update is verified with a digital signature
+      If you choose &ldquo;Never&rdquo;, the app makes no check until you press
+      &ldquo;Check for Updates…&rdquo;. Every update is verified with a digital signature
       before it is installed.</li>
-      <li><strong>"Donate" link</strong>Opens the system browser to an
-      external PayPal page, handled by PayPal, not by Unwrap.</li>
+      <li><strong>&ldquo;Donate&rdquo; and support links</strong> Opens the system browser to an
+      external PayPal page (handled by PayPal, not by Unwrap) or your email app.</li>
     </ul>
     <div class="prose">
       <p>If you don't use these features (and, in the versions downloaded from the website, choose
-      "Never" for updates), the app makes no network requests at all. The Quick Look extension (Finder preview) has no
+      &ldquo;Never&rdquo; for updates), the app makes no network requests for reading files. The Quick Look extensions (Finder preview on Mac and Files preview on iOS) have no
       network access.</p>
 
-      <h2>System permissions</h2>
-      <p>On Mac, Unwrap runs in an <strong>App Sandbox</strong> and only accesses
-      files you explicitly open (double-click, drag & drop, "Open With", or
-      a file picker). It has no generic disk access and does not read other
+      <h2>System permissions and local storage</h2>
+      <p>On <strong>Mac</strong> and <strong>iOS / iPadOS</strong>, Unwrap runs in an <strong>App Sandbox</strong> and only accesses
+      files you explicitly open or import. It has no generic disk access and does not read other
       files or folders.</p>
-      <p>On Windows, Unwrap is a regular desktop application: installation
-      requires administrator confirmation and the app does not run in a sandbox.
-      Settings are stored on your computer, in the
+      <p>On <strong>Android</strong>, Unwrap only requests the Internet permission (solely for the optional features listed above)
+      and only accesses files you explicitly open via the system picker or from other apps; the internal <em>My Files</em> library
+      lives inside the app's private storage.</p>
+      <p>On <strong>Windows</strong>, Unwrap is a regular desktop application: installation
+      requires administrator confirmation and settings are stored on your computer in the
       <code>%APPDATA%\Unwrap</code> folder.</p>
 
       <h2>Website and support</h2>
       <p>This website is hosted on GitHub Pages: as with any web request, GitHub
-      can see the IP address. The site uses no cookies and no analytics; the
+      can see the IP address. The site uses no profiling cookies and no analytics; the
       language and theme you choose are stored only in your browser.</p>
       <p>If you write to me for support, I use your email address and what you
       write only to reply to you.</p>
 
       <h2>Children</h2>
       <p>Unwrap is not directed at children and does not knowingly collect
-      data from children, as it does not collect data from any user.</p>
+      data from children.</p>
 
       <h2>Changes to this policy</h2>
-      <p>Any updates will be posted on this same page, with the "last
-      updated" date at the top.</p>
+      <p>Any updates will be posted on this same page, with the &ldquo;last
+      updated&rdquo; date at the top.</p>
 
       <h2>Contact</h2>
       <p>Questions about this privacy policy: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Privacy">francesco.tarini@gmail.com</a></p>
 
-      <footer>Unwrap &middot; independent app, developed by <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹</footer>
+      <footer>Unwrap &middot; independent app, developed by <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="download.html">Download &amp; Releases</a></footer>
     </div>
   </div>
 </main>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Download &amp; Releases — Unwrap">Download e Release — Unwrap</title>
+<link rel="icon" type="image/png" href="icon-256.png">
+<link rel="apple-touch-icon" href="icon-256.png">
+<meta name="description" content="Scarica Unwrap per macOS, Windows, Android e iOS/iPadOS (in beta su TestFlight). Apre file .p7m, .m7m, fatture elettroniche XML e messaggi PEC.">
+<link rel="canonical" href="https://unwrapapp.it/download.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Unwrap">
+<meta property="og:url" content="https://unwrapapp.it/download.html">
+<meta property="og:title" content="Download e Release — Unwrap">
+<meta property="og:description" content="Scarica Unwrap per macOS, Windows, Android e iOS/iPadOS (in beta su TestFlight). Apre file .p7m, .m7m, fatture elettroniche XML e messaggi PEC.">
+<meta property="og:image" content="https://unwrapapp.it/icon.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<script>
+  var initialLang = (location.hash.match(/-(it|en)$/) || [])[1];
+  try {
+    var savedTheme = localStorage.getItem('unwrap-theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+    if (!initialLang) initialLang = localStorage.getItem('unwrap-lang');
+  } catch (e) {}
+  if (initialLang === 'en') document.documentElement.lang = 'en';
+</script>
+<link rel="stylesheet" href="site.css">
+<style>
+  h1 { font-size: 32px; }
+  .subtitle {
+    font-size: 18px;
+    max-width: 38em;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 48px 0 16px;
+  }
+  ul {
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+</style>
+</head>
+<body>
+<div class="hero">
+<main>
+  <div class="toolbar">
+    <a href="index.html" aria-label="Home"><img class="icon" src="icon-256.png" alt="Unwrap"></a>
+    <div class="toolbar-controls">
+      <div class="lang-toggle">
+        <button type="button" id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
+        <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Cambia tema" aria-label="Cambia tema">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle class="theme-core" cx="12" cy="12" r="5" fill="currentColor"/>
+          <circle class="theme-cut" cx="16" cy="8" r="7"/>
+          <g class="theme-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div data-lang="it">
+    <div class="prose">
+      <p class="nav"><a href="index.html">&larr; Torna alla home di Unwrap</a></p>
+      <h1>Download e Release</h1>
+      <p class="subtitle"><strong>Scegli la versione di Unwrap per il tuo dispositivo.</strong><br>Disponibile per macOS, Windows, Android e per iPhone e iPad su TestFlight.</p>
+
+      <div class="card notice-card">
+        <strong>Stato dell'app: Beta gratuita</strong>
+        <p style="margin-bottom: 0;">Unwrap è attualmente in <strong>beta</strong> su tutte le piattaforme. Al momento l'applicazione è <strong>completamente gratuita</strong>: per sostenerne lo sviluppo indipendente e i costi di mantenimento, sarà supportata da <strong>donazioni volontarie</strong> e da <strong>pubblicità interna all'app</strong>. I documenti che apri vengono sempre elaborati al 100% in locale sul tuo dispositivo.</p>
+      </div>
+    </div>
+
+    <h2>Tutte le versioni disponibili</h2>
+    <div class="release-grid">
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>macOS</h3>
+            <span class="badge-beta">Beta</span>
+          </div>
+          <p class="release-req">macOS 27 &ldquo;Golden Gate&rdquo; o successivo &middot; Apple Silicon</p>
+          <p class="release-desc">App nativa firmata e notarizzata da Apple. Include l'anteprima Quick Look nel Finder premendo la barra spaziatrice, l'estrazione in blocco di intere cartelle, schede e finestre multiple e gli aggiornamenti automatici.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Vai al download per Mac</strong><small>Repo: unwrap-macOS-release &middot; .dmg</small></span>
+          </a>
+          <p class="release-links">Download diretto: <a href="https://github.com/frabolla/unwrap-macOS-release/releases/latest/download/Unwrap.dmg">Unwrap.dmg</a> &middot; <a href="https://github.com/frabolla/unwrap-macOS-release/releases" target="_blank" rel="noopener">Tutte le release</a></p>
+        </div>
+      </div>
+
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>Windows</h3>
+            <span class="badge-beta">Beta</span>
+          </div>
+          <p class="release-req">Windows 11 &middot; Processore x64 (Intel/AMD) o ARM64</p>
+          <p class="release-desc">App desktop per Windows 11 con installer dedicato per PC x64 e ARM64 (es. Snapdragon). Associa subito i file <code>.p7m</code> e <code>.m7m</code> al doppio clic, supporta schede, miniature, stampa, estrazione in blocco e aggiornamenti firmati.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://github.com/frabolla/unwrap-win-release/releases/latest" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Vai al download per Windows</strong><small>Repo: unwrap-win-release &middot; Setup.exe</small></span>
+          </a>
+          <p class="release-links"><a href="https://github.com/frabolla/unwrap-win-release/releases" target="_blank" rel="noopener">Tutte le release e SHA-256</a> &middot; <a href="#windows-it">Come installarla</a></p>
+        </div>
+      </div>
+
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>Android</h3>
+            <span class="badge-beta">Beta</span>
+          </div>
+          <p class="release-req">Android 13 o successivo &middot; Smartphone e tablet</p>
+          <p class="release-desc">App nativa in Material 3 per telefoni e tablet. Apre file <code>.p7m</code>, <code>.m7m</code>, fatture elettroniche e PEC da qualsiasi app o nella libreria privata <em>I miei File</em>, con esportazione e condivisione in PDF A4.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://github.com/frabolla/unwrap-android-release/releases/latest" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Vai al download per Android</strong><small>Repo: unwrap-android-release &middot; .apk</small></span>
+          </a>
+          <p class="release-links"><a href="https://github.com/frabolla/unwrap-android-release/releases" target="_blank" rel="noopener">Tutte le release</a> &middot; <a href="#android-it">Come installare l'APK</a></p>
+        </div>
+      </div>
+
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>iOS e iPadOS</h3>
+            <span class="badge-beta">TestFlight Beta</span>
+          </div>
+          <p class="release-req">iOS / iPadOS 18 o successivo &middot; iPhone e iPad</p>
+          <p class="release-desc">App nativa per iPhone e iPad con libreria privata <em>I miei File</em>, integrazione con l'app File e i servizi cloud, anteprime Quick Look, lettura email/PEC, impaginazione fatture e verifica firma. Distribuita in beta su Apple TestFlight.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Partecipa su TestFlight</strong><small>iPhone e iPad &middot; Invito beta ufficiale</small></span>
+          </a>
+          <p class="release-links"><a href="#ios-it">Come partecipare con TestFlight</a></p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Istruzioni di installazione</h2>
+    <ul>
+      <li id="mac-it"><strong>macOS (<code>unwrap-macOS-release</code>)</strong> Scarica <code>Unwrap.dmg</code> dalla pagina della release, aprilo e trascina Unwrap nella cartella <em>Applicazioni</em>. L'app è firmata con Developer ID e notarizzata da Apple. Per aprire sempre i <code>.p7m</code> con un doppio clic, fai clic destro su un file <code>.p7m</code> nel Finder, scegli «Ottieni informazioni», apri «Apri con», seleziona Unwrap e premi «Modifica tutti…».</li>
+      <li id="windows-it"><strong>Windows (<code>unwrap-win-release</code>)</strong> Dalla pagina della release scarica <code>Unwrap-…-win-x64-Setup.exe</code> per i PC Intel/AMD oppure <code>Unwrap-…-win-arm64-Setup.exe</code> per i PC ARM64 (es. Snapdragon). L'installer non ha ancora una firma Authenticode: se Windows mostra «Windows ha protetto il PC», fai clic su «Ulteriori informazioni» e poi su «Esegui comunque». Nelle note di ogni release trovi l'impronta SHA-256 per verificare il file scaricato.</li>
+      <li id="android-it"><strong>Android (<code>unwrap-android-release</code>)</strong> Dalla pagina della release scarica l'ultimo pacchetto <code>.apk</code> sul tuo telefono o tablet e aprilo da <em>Download</em> o dalle notifiche. Se Android ti chiede il permesso di installare app da quella fonte (es. Chrome o Files), tocca «Impostazioni», attiva l'interruttore e conferma con «Installa».</li>
+      <li id="ios-it"><strong>iOS e iPadOS (Apple TestFlight)</strong> Installa l'app gratuita <strong>TestFlight</strong> da App Store sul tuo iPhone o iPad, poi apri il <a href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">link di invito a TestFlight</a> e tocca «Accetta» e «Installa» per provare la beta e ricevere automaticamente gli aggiornamenti.</li>
+    </ul>
+
+    <h2>Sostieni lo sviluppo</h2>
+    <div class="prose">
+      <div class="card">
+        <strong>Ti è utile? Offrimi un caffè ☕</strong>
+        <p>Unwrap è attualmente in beta e gratuita; sarà sostenuta da donazioni volontarie e pubblicità interna all'app. Se ti fa risparmiare tempo, una donazione libera tramite PayPal aiuta a mantenerla aggiornata su tutte le piattaforme.</p>
+        <a class="donate-btn" href="https://www.paypal.com/paypalme/ftarini" target="_blank" rel="noopener">Dona con PayPal</a>
+      </div>
+    </div>
+
+    <footer>Unwrap &middot; app indipendente, sviluppata da <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
+  </div>
+
+  <div data-lang="en">
+    <div class="prose">
+      <p class="nav"><a href="index.html">&larr; Back to Unwrap home</a></p>
+      <h1>Download &amp; Releases</h1>
+      <p class="subtitle"><strong>Choose the Unwrap release for your device.</strong><br>Available for macOS, Windows, Android, and for iPhone &amp; iPad via TestFlight.</p>
+
+      <div class="card notice-card">
+        <strong>App status: Free Beta</strong>
+        <p style="margin-bottom: 0;">Unwrap is currently in <strong>beta</strong> across all platforms. Right now the app is <strong>completely free</strong>: to support independent development and maintenance costs, it will be supported by <strong>voluntary donations</strong> and <strong>in-app advertising</strong>. Every document you open is always processed 100% locally on your device.</p>
+      </div>
+    </div>
+
+    <h2>All available releases</h2>
+    <div class="release-grid">
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>macOS</h3>
+            <span class="badge-beta">Beta</span>
+          </div>
+          <p class="release-req">macOS 27 &ldquo;Golden Gate&rdquo; or later &middot; Apple Silicon</p>
+          <p class="release-desc">Native app signed and notarized by Apple. Includes a Finder Quick Look extension to preview files with the spacebar, batch folder extraction, multiple tabs and windows, and built-in updates.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Go to Mac download</strong><small>Repo: unwrap-macOS-release &middot; .dmg</small></span>
+          </a>
+          <p class="release-links">Direct download: <a href="https://github.com/frabolla/unwrap-macOS-release/releases/latest/download/Unwrap.dmg">Unwrap.dmg</a> &middot; <a href="https://github.com/frabolla/unwrap-macOS-release/releases" target="_blank" rel="noopener">All releases</a></p>
+        </div>
+      </div>
+
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>Windows</h3>
+            <span class="badge-beta">Beta</span>
+          </div>
+          <p class="release-req">Windows 11 &middot; x64 (Intel/AMD) or ARM64 processor</p>
+          <p class="release-desc">Native desktop app for Windows 11 with dedicated installers for x64 and ARM64 PCs (e.g. Snapdragon). Automatically associates <code>.p7m</code> and <code>.m7m</code> files on double-click, with tabs, page thumbnails, printing, batch extraction, and signed updates.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://github.com/frabolla/unwrap-win-release/releases/latest" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Go to Windows download</strong><small>Repo: unwrap-win-release &middot; Setup.exe</small></span>
+          </a>
+          <p class="release-links"><a href="https://github.com/frabolla/unwrap-win-release/releases" target="_blank" rel="noopener">All releases &amp; SHA-256</a> &middot; <a href="#windows-en">How to install</a></p>
+        </div>
+      </div>
+
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>Android</h3>
+            <span class="badge-beta">Beta</span>
+          </div>
+          <p class="release-req">Android 13 or later &middot; Smartphones &amp; tablets</p>
+          <p class="release-desc">Native Material 3 app for phones and tablets. Opens <code>.p7m</code>, <code>.m7m</code>, e-invoices, and PEC messages from any app or inside the private <em>My Files</em> library, with A4 PDF export and sharing.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://github.com/frabolla/unwrap-android-release/releases/latest" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.5 16.5V18a2.5 2.5 0 0 0 2.5 2.5h10a2.5 2.5 0 0 0 2.5-2.5v-1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Go to Android download</strong><small>Repo: unwrap-android-release &middot; .apk</small></span>
+          </a>
+          <p class="release-links"><a href="https://github.com/frabolla/unwrap-android-release/releases" target="_blank" rel="noopener">All releases</a> &middot; <a href="#android-en">How to install the APK</a></p>
+        </div>
+      </div>
+
+      <div class="release-card">
+        <div>
+          <div class="release-header">
+            <h3>iOS &amp; iPadOS</h3>
+            <span class="badge-beta">TestFlight Beta</span>
+          </div>
+          <p class="release-req">iOS / iPadOS 18 or later &middot; iPhone &amp; iPad</p>
+          <p class="release-desc">Native iPhone and iPad app with a private <em>My Files</em> library, Files app and cloud provider integration, Quick Look previews, email/PEC reader, invoice rendering, and signature verification. Distributed in beta on Apple TestFlight.</p>
+        </div>
+        <div class="release-actions">
+          <a class="download-btn" href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="dl-text"><strong>Join on TestFlight</strong><small>iPhone &amp; iPad &middot; Official beta invite</small></span>
+          </a>
+          <p class="release-links"><a href="#ios-en">How to join via TestFlight</a></p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Installation instructions</h2>
+    <ul>
+      <li id="mac-en"><strong>macOS (<code>unwrap-macOS-release</code>)</strong> Download <code>Unwrap.dmg</code> from the release page, open it, and drag Unwrap into your <em>Applications</em> folder. The app is signed with a Developer ID and notarized by Apple. To always open <code>.p7m</code> files with a double-click, right-click a <code>.p7m</code> file in Finder, choose &ldquo;Get Info&rdquo;, expand &ldquo;Open with&rdquo;, select Unwrap, and click &ldquo;Change All…&rdquo;.</li>
+      <li id="windows-en"><strong>Windows (<code>unwrap-win-release</code>)</strong> From the release page, download <code>Unwrap-…-win-x64-Setup.exe</code> for Intel/AMD PCs or <code>Unwrap-…-win-arm64-Setup.exe</code> for ARM64 PCs (e.g. Snapdragon). The installer does not have an Authenticode signature yet: if Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo;. Each release note lists the SHA-256 fingerprint to verify the downloaded file.</li>
+      <li id="android-en"><strong>Android (<code>unwrap-android-release</code>)</strong> Download the latest <code>.apk</code> package from the release page onto your phone or tablet and open it from <em>Downloads</em> or your notifications. If Android asks for permission to install unknown apps from your browser or file manager, tap &ldquo;Settings&rdquo;, enable the toggle, and tap &ldquo;Install&rdquo;.</li>
+      <li id="ios-en"><strong>iOS &amp; iPadOS (Apple TestFlight)</strong> Install the free <strong>TestFlight</strong> app from the App Store on your iPhone or iPad, then open the <a href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">TestFlight invitation link</a> and tap &ldquo;Accept&rdquo; and &ldquo;Install&rdquo; to try the beta and receive automatic updates.</li>
+    </ul>
+
+    <h2>Support development</h2>
+    <div class="prose">
+      <div class="card">
+        <strong>Finding it useful? Buy me a coffee ☕</strong>
+        <p>Unwrap is currently in beta and free; it will be supported by voluntary donations and in-app advertising. If it saves you time, a voluntary donation via PayPal helps keep it updated across all platforms.</p>
+        <a class="donate-btn" href="https://www.paypal.com/paypalme/ftarini" target="_blank" rel="noopener">Donate with PayPal</a>
+      </div>
+    </div>
+
+    <footer>Unwrap &middot; independent app, developed by <a href="https://tarini.eu/">Francesco Tarini</a> 🇮🇹 &middot; <a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
+  </div>
+</main>
+</div>
+<script src="site.js"></script>
+</body>
+</html>
