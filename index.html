@@ -89,67 +89,174 @@
     </section>
 
     <h2>Funzionalità e particolarità</h2>
-    <ul>
-      <li><strong>Apertura immediata, senza passaggi inutili</strong> Riconosce il contenuto reale guardando direttamente i byte del file, non solo l'estensione. Apre buste <code>.p7m</code> (anche annidate una dentro l'altra) e contenitori <code>.m7m</code> mostrando all'istante il documento pronto da leggere, salvare o stampare.</li>
-      <li><strong>Fatture elettroniche italiane ed europee in A4</strong> Impagina come un vero foglio A4 leggibile e stampabile sia le fatture italiane (<strong>FatturaPA</strong>, con i fogli di stile ufficiali <em>AssoSoftware</em> o <em>Agenzia delle Entrate</em>) sia i formati europei (<strong>UBL/Peppol</strong>, <strong>XRechnung</strong>, <strong>CII</strong>, <strong>Factur-X / ZUGFeRD</strong>, <strong>Facturae</strong> anche in lotti, <strong>KSeF</strong>). Un pannello dedicato riepiloga subito cliente, fornitore, numero fattura e IBAN, pronti da copiare.</li>
-      <li><strong>Messaggi email e PEC (<code>.eml</code>)</strong> Legge i messaggi di posta elettronica e le buste di Posta Elettronica Certificata in una vista chiusa e sicura (senza script né immagini traccianti dalla rete). Mostra mittente, destinatari, testo e dati di certificazione, e permette di aprire con un clic o un tocco gli allegati <code>.p7m</code> o le fatture.</li>
-      <li><strong>Firmatari e verifica della firma su richiesta</strong> Elenca subito i firmatari con i dati letti dal certificato (nome, codice fiscale, organizzazione, validità, marca temporale). Quando vuoi approfondire, il comando <em>Verifica firma</em> controlla integrità, catena di fiducia (con le <strong>Trusted List ufficiali eIDAS</strong> italiana AgID ed europea), stato di revoca (OCSP/CRL) e marche temporali, creando un rapporto esportabile in PDF A4.</li>
-      <li><strong>Strumenti su misura per Desktop e Mobile</strong> Su <strong>Mac e Windows</strong> lavori con schede o finestre multiple, miniature delle pagine, trascinamento diretto del file estratto ed <strong>estrazione in blocco</strong> di intere cartelle (anche generando in automatico i PDF delle fatture); su Mac hai anche l'anteprima <strong>Quick Look</strong> nel Finder e su iOS nell'app File. Su <strong>iPhone, iPad e Android</strong> hai la libreria privata <em>I miei File</em> con cartelle e i documenti <em>Recenti</em>.</li>
-      <li><strong>Esportazione in PDF, stampa e privacy locale</strong> Salva il file originale estratto oppure esporta in <strong>PDF A4</strong> e stampa fatture, testi, XML, JSON, immagini e rapporti di verifica. Il documento estratto resta nella memoria del dispositivo finché non scegli tu di salvarlo o condividerlo.</li>
-    </ul>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Apertura immediata, senza passaggi inutili</h3>
+        <p>Riconosce il contenuto reale guardando direttamente i byte del file, non solo l'estensione. Apre buste <code>.p7m</code> (anche annidate una dentro l'altra) e contenitori <code>.m7m</code> mostrando all'istante il documento pronto da leggere, salvare o stampare.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+        </div>
+        <h3>Fatture elettroniche italiane ed europee in A4</h3>
+        <p>Impagina come un vero foglio A4 leggibile e stampabile sia le fatture italiane (<strong>FatturaPA</strong>, con i fogli di stile ufficiali <em>AssoSoftware</em> o <em>Agenzia delle Entrate</em>) sia i formati europei (<strong>UBL/Peppol</strong>, <strong>XRechnung</strong>, <strong>CII</strong>, <strong>Factur-X / ZUGFeRD</strong>, <strong>Facturae</strong>, <strong>KSeF</strong>). Con riepilogo immediato di cliente, fornitore, importi e IBAN.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <h3>Messaggi email e PEC (<code>.eml</code>)</h3>
+        <p>Legge i messaggi di posta elettronica e le buste di Posta Elettronica Certificata in una vista protetta (senza script né immagini traccianti dalla rete). Mostra mittente, destinatari, testo e dati di certificazione, aprendo con un tocco gli allegati <code>.p7m</code> e le fatture.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Firmatari e verifica della firma su richiesta</h3>
+        <p>Elenca subito i firmatari con i dati letti dal certificato (nome, codice fiscale, organizzazione, validità, marca temporale). Quando vuoi approfondire, il comando <em>Verifica firma</em> controlla integrità, Trusted List eIDAS, stato di revoca (OCSP/CRL) e marche, con rapporto in PDF A4.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="4" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/></svg>
+        </div>
+        <h3>Strumenti su misura per Desktop e Mobile</h3>
+        <p>Su <strong>Mac e Windows</strong> lavori con schede o finestre multiple, miniature, trascinamento diretto ed <strong>estrazione in blocco</strong> (anche convertendo le fatture in PDF in automatico), con anteprima <strong>Quick Look</strong>. Su <strong>iPhone, iPad e Android</strong> hai la libreria <em>I miei File</em> e i <em>Recenti</em>.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Esportazione in PDF, stampa e privacy locale</h3>
+        <p>Salva il file originale estratto oppure esporta in <strong>PDF A4</strong> e stampa fatture, testi, XML, JSON, immagini e rapporti di verifica. Il documento estratto resta sempre nella memoria locale del dispositivo finché non scegli tu di salvarlo o condividerlo.</p>
+      </div>
+    </div>
 
     <h2>Come iniziare</h2>
-    <ul>
-      <li><strong>1. Scarica la versione per il tuo dispositivo</strong> Visita la <a href="download.html">pagina delle release</a> per scaricare Unwrap per <strong>macOS</strong>, <strong>Windows</strong>, <strong>Android</strong> o per partecipare alla beta per <strong>iPhone e iPad</strong> su Apple TestFlight.</li>
-      <li><strong>2. Apri i file con un doppio clic o un tocco</strong> Su Windows il doppio clic su <code>.p7m</code> e <code>.m7m</code> apre già Unwrap dopo l'installazione; su Mac ti basta associarlo la prima volta da <em>Ottieni informazioni &rarr; Apri con &rarr; Modifica tutti</em> (o premere la barra spaziatrice nel Finder per Quick Look). Su Android, iPhone e iPad apri i file da <em>File</em>, dalla posta o dalla schermata <em>Home</em> e <em>I miei File</em> dell'app.</li>
-      <li><strong>3. Leggi, salva, esporta in PDF o verifica</strong> Consulta subito il documento o la fattura impaginata, passa dalla vista A4 al codice XML originale quando vuoi, salva o trascina fuori il file estratto e avvia la verifica della firma solo quando ti serve.</li>
-    </ul>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-badge">1</span>
+        <h3>Scarica la versione per il tuo dispositivo</h3>
+        <p>Visita la <a href="download.html">pagina delle release</a> per scaricare Unwrap per <strong>macOS</strong>, <strong>Windows</strong>, <strong>Android</strong> o per partecipare alla beta per <strong>iPhone e iPad</strong> su Apple TestFlight.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-badge">2</span>
+        <h3>Apri i file con un doppio clic o un tocco</h3>
+        <p>Su Windows il doppio clic apre già i file dopo l'installazione; su Mac puoi associarlo da <em>Ottieni informazioni &rarr; Apri con</em> o premere spazio per Quick Look. Su smartphone e tablet apri i file da <em>File</em>, dalla posta o dall'app.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-badge">3</span>
+        <h3>Leggi, salva, esporta in PDF o verifica</h3>
+        <p>Consulta subito il documento o la fattura impaginata, passa dalla vista A4 al codice XML originale quando vuoi, salva o trascina fuori il file estratto e avvia la verifica della firma solo quando ti serve.</p>
+      </div>
+    </div>
 
     <h2>Domande frequenti</h2>
-    <ul>
-      <li><strong>Cos'è un file .p7m (o .m7m)?</strong> Un file <code>.p7m</code> è un documento (PDF, fattura elettronica, XML, immagine…) racchiuso in una «busta» firmata digitalmente secondo lo standard CAdES/PKCS#7, usato in Italia e in Europa per fatture elettroniche, PEC, contratti e atti della Pubblica Amministrazione. Un file <code>.m7m</code> è invece un contenitore che abbina al documento una o più marche temporali (RFC 5544). Unwrap apre entrambi e mostra subito il contenuto.</li>
-      <li><strong>Requisiti di sistema</strong> <strong>Mac:</strong> macOS 27 «Golden Gate» o successivo, con Apple Silicon. <strong>Windows:</strong> Windows 11, processore x64 o ARM64. <strong>Android:</strong> Android 13 o successivo (smartphone e tablet). <strong>iOS / iPadOS:</strong> iOS 18 o successivo (iPhone e iPad, tramite TestFlight). Tutti i dettagli sono nella <a href="download.html">pagina di download</a>.</li>
-      <li><strong>I miei file lasciano il dispositivo?</strong> No: l'apertura, l'estrazione e la lettura avvengono interamente in locale nella memoria del tuo dispositivo. La rete viene usata solo su tua richiesta per scaricare la prima volta il foglio di stile delle fatture italiane, per la verifica facoltativa della firma (OCSP/CRL e Trusted List eIDAS), per il controllo degli aggiornamenti (disattivabile) e per aprire i link esterni.</li>
-      <li><strong>Quanto costa Unwrap? Come viene sostenuta?</strong> Unwrap è attualmente in <strong>beta</strong> ed è <strong>completamente gratuita</strong>. Per sostenerne lo sviluppo indipendente e i costi di mantenimento nel tempo, l'app è e sarà supportata da <strong>donazioni volontarie</strong> (tramite un link PayPal esterno, mai obbligatorio) e da <strong>pubblicità interna all'app</strong>.</li>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>Cos'è un file .p7m (o .m7m)?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Un file <code>.p7m</code> è un documento (PDF, fattura elettronica, XML, immagine…) racchiuso in una «busta» firmata digitalmente secondo lo standard CAdES/PKCS#7, usato in Italia e in Europa per fatture elettroniche, PEC, contratti e atti della Pubblica Amministrazione. Un file <code>.m7m</code> è invece un contenitore che abbina al documento una o più marche temporali (RFC 5544). Unwrap apre entrambi e mostra subito il contenuto.</p>
+        </div>
+      </details>
 
-      <li class="faq-wide" id="faq-tecnica-it">
-        <strong>Quali tipi di file, formati e verifiche è in grado di aprire l'applicazione? (Dettagli tecnici)</strong>
-        <p style="margin-top: 6px; margin-bottom: 8px; color: var(--muted); font-size: 14px;">Unwrap analizza direttamente i byte del file (fino a 256 MB) anziché fidarsi della sola estensione, ed è progettata per gestire buste crittografiche, fatture elettroniche, messaggi di posta e documenti d'ufficio:</p>
-        <div class="tech-grid">
-          <div class="tech-box">
-            <strong>1. Buste firmate e contenitori</strong>
-            <p>Apre buste <code>.p7m</code> (<strong>CAdES / PKCS#7 <code>SignedData</code></strong>) nelle codifiche <strong>DER</strong> binaria, <strong>Base64</strong> e <strong>PEM</strong>, incluse le strutture BER a lunghezza indefinita.</p>
-            <p>Gestisce <strong>buste annidate</strong> (es. <code>.pdf.p7m.p7m</code>) fino a 5 livelli mostrando i firmatari di ciascuna busta, <strong>firme <em>detached</em></strong> (buste con sola firma, verificando crittograficamente che il file originale scelto dall'utente sia proprio quello firmato), contenitori marcati temporalmente <strong><code>.m7m</code></strong> (<code>TimeStampedData</code>, RFC 5544) e firme <strong>CAdES-T</strong>. Supporta algoritmi <strong>RSA</strong>, <strong>RSA-PSS</strong> ed <strong>ECDSA</strong>. <em>(Le buste cifrate <code>EnvelopedData</code> non sono supportate).</em></p>
-          </div>
-          <div class="tech-box">
-            <strong>2. Fatture elettroniche (IT ed UE)</strong>
-            <p><strong>FatturaPA (Italia):</strong> fatture ordinarie, verso la PA e semplificate (<code>FPR12</code>, <code>FPA12</code>, <code>FSM10</code>), impaginate in A4 con i fogli di stile XSLT ufficiali <em>AssoSoftware</em> o <em>Agenzia delle Entrate</em>, oppure consultabili come XML originale.</p>
-            <p><strong>Formati europei (EN 16931 e nazionali):</strong> impaginazione A4 integrata (senza download esterni) per <strong>UBL 2.1</strong> (rete <strong>Peppol BIS 3.0</strong>, <strong>XRechnung UBL</strong>, <strong>OIOUBL</strong>, <strong>RO e-Factura</strong>, anche in busta <strong>Peppol SBDH</strong>), <strong>UN/CEFACT CII</strong> (<strong>XRechnung CII</strong>, Francia), <strong>Factur-X / ZUGFeRD 1.0 e 2.x</strong> (anche estraendo l'XML incorporato nei PDF ibridi su Mac, Windows e iOS), <strong>Facturae 3.2.x</strong> (Spagna, inclusi i lotti multi-fattura) e <strong>KSeF FA(2)/FA(3)</strong> (Polonia).</p>
-          </div>
-          <div class="tech-box">
-            <strong>3. Email, PEC e documenti estratti</strong>
-            <p><strong>Email e PEC (<code>.eml</code>, <code>postacert.eml</code>):</strong> legge intestazioni, testo (in una vista isolata senza script né immagini remote), dati di certificazione PEC (<code>daticert.xml</code>) e permette di aprire tutti gli allegati.</p>
-            <p><strong>Formati visualizzati direttamente:</strong> <strong>PDF</strong> (zoom, miniature, ricerca, stampa), <strong>XML</strong> e <strong>JSON</strong> (formattati con indentazione e sintassi colorata), <strong>testo</strong> (UTF-8, UTF-16 con BOM, Windows-1252) e <strong>immagini</strong> (PNG, JPEG, GIF, BMP, WebP, HEIC/AVIF fino a 40 MP). Qualsiasi altro formato viene estratto per essere salvato o aperto con l'app predefinita, con blocco di sicurezza contro l'avvio involontario di eseguibili o script (<code>.exe</code>, <code>.bat</code>, <code>.apk</code>, <code>.sh</code>).</p>
-          </div>
-          <div class="tech-box">
-            <strong>4. Verifiche crittografiche (su richiesta)</strong>
-            <p><strong>Integrità e catena di fiducia:</strong> verifica l'impronta crittografica (<em>digest</em>) e la firma matematica del documento; ricostruisce la catena dei certificati (scaricando eventuali intermedi via <strong>AIA</strong>) fino alle radici di sistema o alle <strong>Trusted List ufficiali eIDAS</strong> (lista italiana <strong>AgID</strong> o liste di <strong>tutta l'UE</strong>, comprese le serie storiche dei servizi qualificati).</p>
-            <p><strong>Idoneità, revoca e marche temporali:</strong> controlla l'uso consentito del certificato (<code>Key Usage</code> / <code>EKU</code>), interroga i servizi <strong>OCSP</strong> e <strong>CRL</strong> per verificare lo stato di revoca, e valida le <strong>marche temporali</strong> (CAdES-T e <code>.m7m</code>, inclusi metadati protetti e catene di marche successive). <em>La verifica ha valore tecnico informativo e non sostituisce una validazione legale LTV.</em></p>
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>Requisiti di sistema</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p><strong>Mac:</strong> macOS 27 «Golden Gate» o successivo, con Apple Silicon.<br>
+          <strong>Windows:</strong> Windows 11, processore x64 o ARM64.<br>
+          <strong>Android:</strong> Android 13 o successivo (smartphone e tablet).<br>
+          <strong>iOS / iPadOS:</strong> iOS 18 o successivo (iPhone e iPad, tramite TestFlight).<br>
+          Tutti i dettagli e i requisiti completi sono descritti nella <a href="download.html">pagina di download</a>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>I miei file lasciano il dispositivo?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>No: l'apertura, l'estrazione e la lettura avvengono interamente in locale nella memoria del tuo dispositivo. La rete viene usata solo su tua richiesta per scaricare la prima volta il foglio di stile delle fatture italiane, per la verifica facoltativa della firma (OCSP/CRL e Trusted List eIDAS), per il controllo degli aggiornamenti (disattivabile) e per aprire i link esterni.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>Quanto costa Unwrap? Come viene sostenuta?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Unwrap è attualmente in <strong>beta</strong> ed è <strong>completamente gratuita</strong>. Per sostenerne lo sviluppo indipendente e i costi di mantenimento nel tempo, l'app è e sarà supportata da <strong>donazioni volontarie</strong> (tramite un link PayPal esterno, mai obbligatorio) e da <strong>pubblicità interna all'app</strong>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item" id="faq-tecnica-it">
+        <summary class="faq-summary">
+          <span>Quali tipi di file, formati e verifiche è in grado di aprire l'applicazione? (Dettagli tecnici)</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p style="color: var(--muted); font-size: 14.5px;">Unwrap analizza direttamente i byte del file (fino a 256 MB) anziché fidarsi della sola estensione, ed è progettata per gestire buste crittografiche, fatture elettroniche, messaggi di posta e documenti d'ufficio:</p>
+          <div class="tech-grid">
+            <div class="tech-box">
+              <strong>1. Buste firmate e contenitori</strong>
+              <p>Apre buste <code>.p7m</code> (<strong>CAdES / PKCS#7 <code>SignedData</code></strong>) nelle codifiche <strong>DER</strong> binaria, <strong>Base64</strong> e <strong>PEM</strong>, incluse le strutture BER a lunghezza indefinita.</p>
+              <p>Gestisce <strong>buste annidate</strong> (es. <code>.pdf.p7m.p7m</code>) fino a 5 livelli mostrando i firmatari di ciascuna busta, <strong>firme <em>detached</em></strong> (buste con sola firma, verificando crittograficamente che il file originale scelto dall'utente sia proprio quello firmato), contenitori marcati temporalmente <strong><code>.m7m</code></strong> (<code>TimeStampedData</code>, RFC 5544) e firme <strong>CAdES-T</strong>. Supporta algoritmi <strong>RSA</strong>, <strong>RSA-PSS</strong> ed <strong>ECDSA</strong>. <em>(Le buste cifrate <code>EnvelopedData</code> non sono supportate).</em></p>
+            </div>
+            <div class="tech-box">
+              <strong>2. Fatture elettroniche (IT ed UE)</strong>
+              <p><strong>FatturaPA (Italia):</strong> fatture ordinarie, verso la PA e semplificate (<code>FPR12</code>, <code>FPA12</code>, <code>FSM10</code>), impaginate in A4 con i fogli di stile XSLT ufficiali <em>AssoSoftware</em> o <em>Agenzia delle Entrate</em>, oppure consultabili come XML originale.</p>
+              <p><strong>Formati europei (EN 16931 e nazionali):</strong> impaginazione A4 integrata (senza download esterni) per <strong>UBL 2.1</strong> (rete <strong>Peppol BIS 3.0</strong>, <strong>XRechnung UBL</strong>, <strong>OIOUBL</strong>, <strong>RO e-Factura</strong>, anche in busta <strong>Peppol SBDH</strong>), <strong>UN/CEFACT CII</strong> (<strong>XRechnung CII</strong>, Francia), <strong>Factur-X / ZUGFeRD 1.0 e 2.x</strong> (anche estraendo l'XML incorporato nei PDF ibridi su Mac, Windows e iOS), <strong>Facturae 3.2.x</strong> (Spagna, inclusi i lotti multi-fattura) e <strong>KSeF FA(2)/FA(3)</strong> (Polonia).</p>
+            </div>
+            <div class="tech-box">
+              <strong>3. Email, PEC e documenti estratti</strong>
+              <p><strong>Email e PEC (<code>.eml</code>, <code>postacert.eml</code>):</strong> legge intestazioni, testo (in una vista isolata senza script né immagini remote), dati di certificazione PEC (<code>daticert.xml</code>) e permette di aprire tutti gli allegati.</p>
+              <p><strong>Formati visualizzati direttamente:</strong> <strong>PDF</strong> (zoom, miniature, ricerca, stampa), <strong>XML</strong> e <strong>JSON</strong> (formattati con indentazione e sintassi colorata), <strong>testo</strong> (UTF-8, UTF-16 con BOM, Windows-1252) e <strong>immagini</strong> (PNG, JPEG, GIF, BMP, WebP, HEIC/AVIF fino a 40 MP). Qualsiasi altro formato viene estratto per essere salvato o aperto con l'app predefinita, con blocco di sicurezza contro l'avvio involontario di eseguibili o script (<code>.exe</code>, <code>.bat</code>, <code>.apk</code>, <code>.sh</code>).</p>
+            </div>
+            <div class="tech-box">
+              <strong>4. Verifiche crittografiche (su richiesta)</strong>
+              <p><strong>Integrità e catena di fiducia:</strong> verifica l'impronta crittografica (<em>digest</em>) e la firma matematica del documento; ricostruisce la catena dei certificati (scaricando eventuali intermedi via <strong>AIA</strong>) fino alle radici di sistema o alle <strong>Trusted List ufficiali eIDAS</strong> (lista italiana <strong>AgID</strong> o liste di <strong>tutta l'UE</strong>, comprese le serie storiche dei servizi qualificati).</p>
+              <p><strong>Idoneità, revoca e marche temporali:</strong> controlla l'uso consentito del certificato (<code>Key Usage</code> / <code>EKU</code>), interroga i servizi <strong>OCSP</strong> e <strong>CRL</strong> per verificare lo stato di revoca, e valida le <strong>marche temporali</strong> (CAdES-T e <code>.m7m</code>, inclusi metadati protetti e catene di marche successive). <em>La verifica ha valore tecnico informativo e non sostituisce una validazione legale LTV.</em></p>
+            </div>
           </div>
         </div>
-      </li>
-    </ul>
+      </details>
+    </div>
 
     <h2>Assistenza e Sostegno</h2>
     <div class="support-grid">
-      <div class="card">
-        <strong>Hai un problema o una domanda?</strong>
-        <p>Scrivimi direttamente, rispondo io: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Assistenza">francesco.tarini@gmail.com</a></p>
+      <div class="card support-card">
+        <div class="card-content">
+          <strong>Hai un problema o una domanda?</strong>
+          <p>Scrivimi direttamente per segnalare problemi, suggerire nuovi formati o chiedere aiuto: rispondo personalmente a ogni messaggio.</p>
+        </div>
+        <div class="support-action">
+          <a class="btn-secondary" href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Assistenza">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 17px; height: 17px;" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>Scrivimi un'email</span>
+          </a>
+        </div>
       </div>
-      <div class="card">
-        <strong>Ti è utile? Offrimi un caffè ☕</strong>
-        <p>Unwrap è attualmente in beta e gratuita, sviluppata in modo indipendente; sarà sostenuta da donazioni volontarie e pubblicità interna all'app. Se ti fa risparmiare tempo, una donazione libera tramite PayPal aiuta a mantenerla aggiornata.</p>
-        <a class="donate-btn" href="https://www.paypal.com/paypalme/ftarini" target="_blank" rel="noopener">Dona con PayPal</a>
+      <div class="card support-card">
+        <div class="card-content">
+          <strong>Ti è utile? Offrimi un caffè ☕</strong>
+          <p>Unwrap è attualmente in beta e gratuita, sviluppata in modo indipendente; sarà sostenuta da donazioni volontarie e pubblicità interna all'app. Se ti fa risparmiare tempo, una donazione libera aiuta a mantenerla aggiornata.</p>
+        </div>
+        <div class="support-action">
+          <a class="donate-btn" href="https://www.paypal.com/paypalme/ftarini" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 17px; height: 17px;" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" x2="6" y1="1" y2="4"/><line x1="10" x2="10" y1="1" y2="4"/><line x1="14" x2="14" y1="1" y2="4"/></svg>
+            <span>Dona con PayPal</span>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -180,67 +287,174 @@
     </section>
 
     <h2>Features and highlights</h2>
-    <ul>
-      <li><strong>Instant opening, zero friction</strong> Detects the true file type by inspecting raw file bytes rather than relying on the extension alone. Opens <code>.p7m</code> envelopes (even nested multiple times) and <code>.m7m</code> containers, showing the inner document ready to read, save, or print.</li>
-      <li><strong>Italian &amp; European e-invoices formatted in A4</strong> Renders both Italian e-invoices (<strong>FatturaPA</strong>, using official <em>AssoSoftware</em> or <em>Italian Revenue Agency</em> XSLT stylesheets) and European formats (<strong>UBL/Peppol</strong>, <strong>XRechnung</strong>, <strong>CII</strong>, <strong>Factur-X / ZUGFeRD</strong>, <strong>Facturae</strong> including multi-invoice batches, and <strong>KSeF</strong>) as clean, printable A4 pages. A dedicated side panel summarizes customer, supplier, invoice number, and IBAN ready to copy.</li>
-      <li><strong>Email and PEC messages (<code>.eml</code>)</strong> Reads standard emails and Italian Certified Email (<code>postacert.eml</code>) envelopes in a closed, privacy-safe view with no scripts or tracking images. Displays headers, body, and PEC certification data, letting you open <code>.p7m</code> or invoice attachments with a single click or tap.</li>
-      <li><strong>Signers and on-demand signature verification</strong> Immediately lists signers and certificate metadata (name, tax ID, organization, validity, timestamp). Whenever needed, <em>Verify Signature</em> checks document integrity, trust chains (via system roots and official <strong>eIDAS Trusted Lists</strong> for Italy/AgID or the entire EU), revocation status (OCSP/CRL), and timestamps, producing an A4 PDF report.</li>
-      <li><strong>Tailored for both Desktop and Mobile</strong> On <strong>Mac and Windows</strong>, work with multiple tabs or windows, page thumbnails, drag-and-drop extraction, and <strong>batch extraction</strong> for entire folders (optionally generating invoice PDFs automatically); on Mac, press the spacebar in Finder for a <strong>Quick Look</strong> preview (and in the Files app on iOS). On <strong>iPhone, iPad, and Android</strong>, organize documents in the private <em>My Files</em> library and quickly reopen <em>Recent</em> files.</li>
-      <li><strong>PDF export, printing, and 100% local privacy</strong> Save the extracted original file, or export to <strong>A4 PDF</strong> and print invoices, text, XML, JSON, images, and verification reports. Extracted content stays in device memory until you explicitly save or share it.</li>
-    </ul>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Instant opening, zero friction</h3>
+        <p>Detects the true file type by inspecting raw file bytes rather than relying on the extension alone. Opens <code>.p7m</code> envelopes (even nested multiple times) and <code>.m7m</code> containers, showing the inner document ready to read, save, or print.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+        </div>
+        <h3>Italian &amp; European e-invoices in A4</h3>
+        <p>Renders both Italian e-invoices (<strong>FatturaPA</strong>, using official <em>AssoSoftware</em> or <em>Revenue Agency</em> XSLT stylesheets) and European formats (<strong>UBL/Peppol</strong>, <strong>XRechnung</strong>, <strong>CII</strong>, <strong>Factur-X / ZUGFeRD</strong>, <strong>Facturae</strong>, <strong>KSeF</strong>) as clean, printable A4 pages, with customer and IBAN copy-ready.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <h3>Email and PEC messages (<code>.eml</code>)</h3>
+        <p>Reads standard emails and Italian Certified Email (<code>postacert.eml</code>) envelopes in a closed, privacy-safe view with no scripts or tracking images. Displays headers, body, and PEC certification data, letting you open <code>.p7m</code> or invoice attachments with a single tap.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Signers and signature verification on demand</h3>
+        <p>Immediately lists signers and certificate metadata (name, tax ID, organization, validity, timestamp). Whenever needed, <em>Verify Signature</em> checks document integrity, trust chains (system roots &amp; <strong>eIDAS Trusted Lists</strong>), revocation status (OCSP/CRL), and timestamps, with an A4 PDF report.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="4" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/></svg>
+        </div>
+        <h3>Tailored for Desktop and Mobile</h3>
+        <p>On <strong>Mac and Windows</strong>, work with multiple tabs or windows, page thumbnails, drag-and-drop, and <strong>batch extraction</strong> for entire folders (optionally generating invoice PDFs), with <strong>Quick Look</strong>. On <strong>iPhone, iPad, and Android</strong>, organize files in <em>My Files</em> and <em>Recent</em>.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>PDF export, printing, and 100% local privacy</h3>
+        <p>Save the extracted original file, or export to <strong>A4 PDF</strong> and print invoices, text, XML, JSON, images, and verification reports. Extracted content stays in local device memory until you explicitly choose to save or share it.</p>
+      </div>
+    </div>
 
     <h2>Getting Started</h2>
-    <ul>
-      <li><strong>1. Download the release for your device</strong> Visit the <a href="download.html">releases page</a> to download Unwrap for <strong>macOS</strong>, <strong>Windows</strong>, <strong>Android</strong>, or to join the <strong>iPhone and iPad</strong> beta on Apple TestFlight.</li>
-      <li><strong>2. Open files with a double-click or a tap</strong> On Windows, double-clicking a <code>.p7m</code> or <code>.m7m</code> file opens Unwrap right after installation; on Mac, set Unwrap as default once via <em>Get Info &rarr; Open with &rarr; Change All…</em> (or press the spacebar in Finder for Quick Look). On Android, iPhone, and iPad, open files from <em>Files</em>, your mail app, or directly from Unwrap's <em>Home</em> and <em>My Files</em> tabs.</li>
-      <li><strong>3. Read, save, export to PDF, or verify</strong> Read the document or formatted invoice right away, switch between the A4 layout and raw XML whenever you like, save or drag out the extracted file, and run a full signature check whenever needed.</li>
-    </ul>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-badge">1</span>
+        <h3>Download the release for your device</h3>
+        <p>Visit the <a href="download.html">releases page</a> to download Unwrap for <strong>macOS</strong>, <strong>Windows</strong>, <strong>Android</strong>, or to join the <strong>iPhone and iPad</strong> beta on Apple TestFlight.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-badge">2</span>
+        <h3>Open files with a double-click or a tap</h3>
+        <p>On Windows, double-clicking opens files right away; on Mac, set Unwrap as default via <em>Get Info &rarr; Open with</em> or press space for Quick Look. On phones and tablets, open files from <em>Files</em>, your mail app, or Unwrap.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-badge">3</span>
+        <h3>Read, save, export to PDF, or verify</h3>
+        <p>Read the document or formatted invoice right away, switch between the A4 layout and raw XML whenever you like, save or drag out the extracted file, and run a full signature check whenever needed.</p>
+      </div>
+    </div>
 
     <h2>FAQ</h2>
-    <ul>
-      <li><strong>What is a .p7m (or .m7m) file?</strong> A <code>.p7m</code> file is a document (PDF, e-invoice, XML, image…) wrapped in a digitally signed &ldquo;envelope&rdquo; following the CAdES/PKCS#7 standard, widely used in Italy and across Europe for electronic invoices, certified email (PEC), contracts, and public administration records. An <code>.m7m</code> file is a container that bundles a document with one or more cryptographic timestamps (RFC 5544). Unwrap opens both and displays the content immediately.</li>
-      <li><strong>System requirements</strong> <strong>Mac:</strong> macOS 27 &ldquo;Golden Gate&rdquo; or later, Apple Silicon. <strong>Windows:</strong> Windows 11, x64 or ARM64 processor. <strong>Android:</strong> Android 13 or later (smartphones and tablets). <strong>iOS / iPadOS:</strong> iOS 18 or later (iPhone and iPad, via TestFlight). Full details are on the <a href="download.html">download page</a>.</li>
-      <li><strong>Does my data leave the device?</strong> No: opening, extracting, and reading happen entirely on-device in local memory. Network access is only used on demand to download the Italian invoice stylesheet once, to run optional signature verification (OCSP/CRL and eIDAS Trusted Lists), to check for app updates (can be turned off), and to open external links.</li>
-      <li><strong>How much does Unwrap cost? How is it supported?</strong> Unwrap is currently in <strong>beta</strong> and is <strong>completely free</strong>. To sustain independent development and ongoing maintenance costs, the app is and will be supported by <strong>voluntary donations</strong> (via an optional external PayPal link) and <strong>in-app advertising</strong>.</li>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>What is a .p7m (or .m7m) file?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>A <code>.p7m</code> file is a document (PDF, e-invoice, XML, image…) wrapped in a digitally signed &ldquo;envelope&rdquo; following the CAdES/PKCS#7 standard, widely used in Italy and across Europe for electronic invoices, certified email (PEC), contracts, and public administration records. An <code>.m7m</code> file is a container that bundles a document with one or more cryptographic timestamps (RFC 5544). Unwrap opens both and displays the content immediately.</p>
+        </div>
+      </details>
 
-      <li class="faq-wide" id="faq-tecnica-en">
-        <strong>Which file types, formats, and verifications can the application open? (Technical details)</strong>
-        <p style="margin-top: 6px; margin-bottom: 8px; color: var(--muted); font-size: 14px;">Unwrap inspects raw file bytes (up to 256 MB) rather than trusting file extensions alone, and is built to handle cryptographic envelopes, electronic invoices, email messages, and office documents:</p>
-        <div class="tech-grid">
-          <div class="tech-box">
-            <strong>1. Signed envelopes &amp; containers</strong>
-            <p>Opens <code>.p7m</code> envelopes (<strong>CAdES / PKCS#7 <code>SignedData</code></strong>) encoded in binary <strong>DER</strong>, <strong>Base64</strong>, and <strong>PEM</strong>, including indefinite-length BER structures.</p>
-            <p>Handles <strong>nested envelopes</strong> (e.g. <code>.pdf.p7m.p7m</code>) up to 5 levels deep while listing signers for every layer, <strong><em>detached</em> signatures</strong> (prompting for the original data file and verifying its cryptographic digest), timestamped <strong><code>.m7m</code></strong> containers (<code>TimeStampedData</code>, RFC 5544), and <strong>CAdES-T</strong> embedded timestamps. Supports <strong>RSA</strong>, <strong>RSA-PSS</strong>, and <strong>ECDSA</strong> signatures. <em>(Encrypted <code>EnvelopedData</code> envelopes are not supported).</em></p>
-          </div>
-          <div class="tech-box">
-            <strong>2. Electronic invoices (IT &amp; EU)</strong>
-            <p><strong>FatturaPA (Italy):</strong> ordinary, public-administration, and simplified invoices (<code>FPR12</code>, <code>FPA12</code>, <code>FSM10</code>), rendered in A4 using official <em>AssoSoftware</em> or <em>Italian Revenue Agency</em> XSLT stylesheets, or viewable as raw XML.</p>
-            <p><strong>European formats (EN 16931 &amp; national):</strong> built-in offline A4 rendering for <strong>UBL 2.1</strong> (<strong>Peppol BIS 3.0</strong>, <strong>XRechnung UBL</strong>, <strong>OIOUBL</strong>, <strong>RO e-Factura</strong>, including <strong>Peppol SBDH</strong> envelopes), <strong>UN/CEFACT CII</strong> (<strong>XRechnung CII</strong>, France), <strong>Factur-X / ZUGFeRD 1.0 &amp; 2.x</strong> (including extracting embedded XML from hybrid PDFs on Mac, Windows, and iOS), <strong>Facturae 3.2.x</strong> (Spain, including multi-invoice batches), and <strong>KSeF FA(2)/FA(3)</strong> (Poland).</p>
-          </div>
-          <div class="tech-box">
-            <strong>3. Email, PEC &amp; extracted files</strong>
-            <p><strong>Email &amp; PEC (<code>.eml</code>, <code>postacert.eml</code>):</strong> parses MIME messages, displays headers, body (in a sandboxed view with no scripts or remote tracking images), and PEC certification metadata (<code>daticert.xml</code>), and opens any attachment directly.</p>
-            <p><strong>Built-in viewers:</strong> <strong>PDF</strong> (zoom, thumbnails, search, print), <strong>XML</strong> and <strong>JSON</strong> (pretty-printed with syntax highlighting), <strong>plain text</strong> (UTF-8, UTF-16 with BOM, Windows-1252), and <strong>images</strong> (PNG, JPEG, GIF, BMP, WebP, HEIC/AVIF up to 40 MP). Any other file type is extracted so you can save it or open it with its default app, with safety checks preventing accidental execution of programs or scripts (<code>.exe</code>, <code>.bat</code>, <code>.apk</code>, <code>.sh</code>).</p>
-          </div>
-          <div class="tech-box">
-            <strong>4. Cryptographic checks (on demand)</strong>
-            <p><strong>Integrity &amp; trust chain:</strong> recalculates the message digest and verifies each signer's mathematical signature; builds the certificate chain (fetching missing intermediate certificates via <strong>AIA</strong>) up to system trust roots or official <strong>eIDAS Trusted Lists</strong> (Italian <strong>AgID</strong> list or <strong>all EU member state lists</strong>, including historical service status intervals).</p>
-            <p><strong>Key usage, revocation &amp; timestamps:</strong> checks certificate purpose constraints (<code>Key Usage</code> / <code>EKU</code>), queries <strong>OCSP</strong> responders and <strong>CRL</strong> distribution points for revocation status, and validates <strong>timestamps</strong> (CAdES-T and <code>.m7m</code>, including protected metadata and chained timestamps). <em>Verification provides a detailed technical check and does not replace a legal LTV validation.</em></p>
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>System requirements</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p><strong>Mac:</strong> macOS 27 &ldquo;Golden Gate&rdquo; or later, Apple Silicon.<br>
+          <strong>Windows:</strong> Windows 11, x64 or ARM64 processor.<br>
+          <strong>Android:</strong> Android 13 or later (smartphones and tablets).<br>
+          <strong>iOS / iPadOS:</strong> iOS 18 or later (iPhone and iPad, via TestFlight).<br>
+          Full details and prerequisites are available on the <a href="download.html">download page</a>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>Does my data leave the device?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>No: opening, extracting, and reading happen entirely on-device in local memory. Network access is only used on demand to download the Italian invoice stylesheet once, to run optional signature verification (OCSP/CRL and eIDAS Trusted Lists), to check for app updates (can be turned off), and to open external links.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span>How much does Unwrap cost? How is it supported?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p>Unwrap is currently in <strong>beta</strong> and is <strong>completely free</strong>. To sustain independent development and ongoing maintenance costs, the app is and will be supported by <strong>voluntary donations</strong> (via an optional external PayPal link) and <strong>in-app advertising</strong>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item" id="faq-tecnica-en">
+        <summary class="faq-summary">
+          <span>Which file types, formats, and verifications can the application open? (Technical details)</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-answer">
+          <p style="color: var(--muted); font-size: 14.5px;">Unwrap inspects raw file bytes (up to 256 MB) rather than trusting file extensions alone, and is built to handle cryptographic envelopes, electronic invoices, email messages, and office documents:</p>
+          <div class="tech-grid">
+            <div class="tech-box">
+              <strong>1. Signed envelopes &amp; containers</strong>
+              <p>Opens <code>.p7m</code> envelopes (<strong>CAdES / PKCS#7 <code>SignedData</code></strong>) encoded in binary <strong>DER</strong>, <strong>Base64</strong>, and <strong>PEM</strong>, including indefinite-length BER structures.</p>
+              <p>Handles <strong>nested envelopes</strong> (e.g. <code>.pdf.p7m.p7m</code>) up to 5 levels deep while listing signers for every layer, <strong><em>detached</em> signatures</strong> (prompting for the original data file and verifying its cryptographic digest), timestamped <strong><code>.m7m</code></strong> containers (<code>TimeStampedData</code>, RFC 5544), and <strong>CAdES-T</strong> embedded timestamps. Supports <strong>RSA</strong>, <strong>RSA-PSS</strong>, and <strong>ECDSA</strong> signatures. <em>(Encrypted <code>EnvelopedData</code> envelopes are not supported).</em></p>
+            </div>
+            <div class="tech-box">
+              <strong>2. Electronic invoices (IT &amp; EU)</strong>
+              <p><strong>FatturaPA (Italy):</strong> ordinary, public-administration, and simplified invoices (<code>FPR12</code>, <code>FPA12</code>, <code>FSM10</code>), rendered in A4 using official <em>AssoSoftware</em> or <em>Italian Revenue Agency</em> XSLT stylesheets, or viewable as raw XML.</p>
+              <p><strong>European formats (EN 16931 &amp; national):</strong> built-in offline A4 rendering for <strong>UBL 2.1</strong> (<strong>Peppol BIS 3.0</strong>, <strong>XRechnung UBL</strong>, <strong>OIOUBL</strong>, <strong>RO e-Factura</strong>, including <strong>Peppol SBDH</strong> envelopes), <strong>UN/CEFACT CII</strong> (<strong>XRechnung CII</strong>, France), <strong>Factur-X / ZUGFeRD 1.0 &amp; 2.x</strong> (including extracting embedded XML from hybrid PDFs on Mac, Windows, and iOS), <strong>Facturae 3.2.x</strong> (Spain, including multi-invoice batches), and <strong>KSeF FA(2)/FA(3)</strong> (Poland).</p>
+            </div>
+            <div class="tech-box">
+              <strong>3. Email, PEC &amp; extracted files</strong>
+              <p><strong>Email &amp; PEC (<code>.eml</code>, <code>postacert.eml</code>):</strong> parses MIME messages, displays headers, body (in a sandboxed view with no scripts or remote tracking images), and PEC certification metadata (<code>daticert.xml</code>), and opens any attachment directly.</p>
+              <p><strong>Built-in viewers:</strong> <strong>PDF</strong> (zoom, thumbnails, search, print), <strong>XML</strong> and <strong>JSON</strong> (pretty-printed with syntax highlighting), <strong>plain text</strong> (UTF-8, UTF-16 with BOM, Windows-1252), and <strong>images</strong> (PNG, JPEG, GIF, BMP, WebP, HEIC/AVIF up to 40 MP). Any other file type is extracted so you can save it or open it with its default app, with safety checks preventing accidental execution of programs or scripts (<code>.exe</code>, <code>.bat</code>, <code>.apk</code>, <code>.sh</code>).</p>
+            </div>
+            <div class="tech-box">
+              <strong>4. Cryptographic checks (on demand)</strong>
+              <p><strong>Integrity &amp; trust chain:</strong> recalculates the message digest and verifies each signer's mathematical signature; builds the certificate chain (fetching missing intermediate certificates via <strong>AIA</strong>) up to system trust roots or official <strong>eIDAS Trusted Lists</strong> (Italian <strong>AgID</strong> list or <strong>all EU member state lists</strong>, including historical service status intervals).</p>
+              <p><strong>Key usage, revocation &amp; timestamps:</strong> checks certificate purpose constraints (<code>Key Usage</code> / <code>EKU</code>), queries <strong>OCSP</strong> responders and <strong>CRL</strong> distribution points for revocation status, and validates <strong>timestamps</strong> (CAdES-T and <code>.m7m</code>, including protected metadata and chained timestamps). <em>Verification provides a detailed technical check and does not replace a legal LTV validation.</em></p>
+            </div>
           </div>
         </div>
-      </li>
-    </ul>
+      </details>
+    </div>
 
     <h2>Support &amp; Development</h2>
     <div class="support-grid">
-      <div class="card">
-        <strong>Got an issue or a question?</strong>
-        <p>Write to me directly, I answer personally: <a href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Support">francesco.tarini@gmail.com</a></p>
+      <div class="card support-card">
+        <div class="card-content">
+          <strong>Got an issue or a question?</strong>
+          <p>Write to me directly to report bugs, suggest file formats, or ask for help. I answer personally to every message.</p>
+        </div>
+        <div class="support-action">
+          <a class="btn-secondary" href="mailto:francesco.tarini@gmail.com?subject=Unwrap%20-%20Support">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 17px; height: 17px;" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>Send me an email</span>
+          </a>
+        </div>
       </div>
-      <div class="card">
-        <strong>Finding it useful? Buy me a coffee ☕</strong>
-        <p>Unwrap is currently in beta and free, developed independently; it will be supported by voluntary donations and in-app advertising. If it saves you time, a voluntary donation via PayPal helps keep it up to date.</p>
-        <a class="donate-btn" href="https://www.paypal.com/paypalme/ftarini" target="_blank" rel="noopener">Donate with PayPal</a>
+      <div class="card support-card">
+        <div class="card-content">
+          <strong>Finding it useful? Buy me a coffee ☕</strong>
+          <p>Unwrap is currently in beta and free, developed independently; it will be supported by voluntary donations and in-app advertising. If it saves you time, a voluntary donation helps keep it up to date.</p>
+        </div>
+        <div class="support-action">
+          <a class="donate-btn" href="https://www.paypal.com/paypalme/ftarini" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 17px; height: 17px;" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" x2="6" y1="1" y2="4"/><line x1="10" x2="10" y1="1" y2="4"/><line x1="14" x2="14" y1="1" y2="4"/></svg>
+            <span>Donate with PayPal</span>
+          </a>
+        </div>
       </div>
     </div>
 

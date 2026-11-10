@@ -78,14 +78,12 @@
     <h2>Tutte le versioni disponibili</h2>
     <div class="release-grid">
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>macOS</h3>
-            <span class="badge-beta">Beta</span>
-          </div>
-          <p class="release-req">macOS 27 &ldquo;Golden Gate&rdquo; o successivo &middot; Apple Silicon</p>
-          <p class="release-desc">App nativa firmata e notarizzata da Apple. Include l'anteprima Quick Look nel Finder premendo la barra spaziatrice, l'estrazione in blocco di intere cartelle, schede e finestre multiple e gli aggiornamenti automatici.</p>
+        <div class="release-header">
+          <h3>macOS</h3>
+          <span class="badge-beta">Beta</span>
         </div>
+        <p class="release-req">macOS 27 &ldquo;Golden Gate&rdquo; o successivo &middot; Apple Silicon</p>
+        <p class="release-desc">App nativa firmata e notarizzata da Apple. Include l'anteprima Quick Look nel Finder premendo la barra spaziatrice, l'estrazione in blocco di intere cartelle, schede e finestre multiple e gli aggiornamenti automatici.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -99,14 +97,12 @@
       </div>
 
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>Windows</h3>
-            <span class="badge-beta">Beta</span>
-          </div>
-          <p class="release-req">Windows 11 &middot; Processore x64 (Intel/AMD) o ARM64</p>
-          <p class="release-desc">App desktop per Windows 11 con installer dedicato per PC x64 e ARM64 (es. Snapdragon). Associa subito i file <code>.p7m</code> e <code>.m7m</code> al doppio clic, supporta schede, miniature, stampa, estrazione in blocco e aggiornamenti firmati.</p>
+        <div class="release-header">
+          <h3>Windows</h3>
+          <span class="badge-beta">Beta</span>
         </div>
+        <p class="release-req">Windows 11 &middot; Processore x64 (Intel/AMD) o ARM64</p>
+        <p class="release-desc">App desktop per Windows 11 con installer dedicato per PC x64 e ARM64 (es. Snapdragon). Associa subito i file <code>.p7m</code> e <code>.m7m</code> al doppio clic, supporta schede, miniature, stampa, estrazione in blocco e aggiornamenti firmati.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://github.com/frabolla/unwrap-win-release/releases/latest" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -120,14 +116,12 @@
       </div>
 
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>Android</h3>
-            <span class="badge-beta">Beta</span>
-          </div>
-          <p class="release-req">Android 13 o successivo &middot; Smartphone e tablet</p>
-          <p class="release-desc">App nativa in Material 3 per telefoni e tablet. Apre file <code>.p7m</code>, <code>.m7m</code>, fatture elettroniche e PEC da qualsiasi app o nella libreria privata <em>I miei File</em>, con esportazione e condivisione in PDF A4.</p>
+        <div class="release-header">
+          <h3>Android</h3>
+          <span class="badge-beta">Beta</span>
         </div>
+        <p class="release-req">Android 13 o successivo &middot; Smartphone e tablet</p>
+        <p class="release-desc">App nativa in Material 3 per telefoni e tablet. Apre file <code>.p7m</code>, <code>.m7m</code>, fatture elettroniche e PEC da qualsiasi app o nella libreria privata <em>I miei File</em>, con esportazione e condivisione in PDF A4.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://github.com/frabolla/unwrap-android-release/releases/latest" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -141,14 +135,12 @@
       </div>
 
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>iOS e iPadOS</h3>
-            <span class="badge-beta">TestFlight Beta</span>
-          </div>
-          <p class="release-req">iOS / iPadOS 18 o successivo &middot; iPhone e iPad</p>
-          <p class="release-desc">App nativa per iPhone e iPad con libreria privata <em>I miei File</em>, integrazione con l'app File e i servizi cloud, anteprime Quick Look, lettura email/PEC, impaginazione fatture e verifica firma. Distribuita in beta su Apple TestFlight.</p>
+        <div class="release-header">
+          <h3>iOS e iPadOS</h3>
+          <span class="badge-beta">TestFlight Beta</span>
         </div>
+        <p class="release-req">iOS / iPadOS 18 o successivo &middot; iPhone e iPad</p>
+        <p class="release-desc">App nativa per iPhone e iPad con libreria privata <em>I miei File</em>, integrazione con l'app File e i servizi cloud, anteprime Quick Look, lettura email/PEC, impaginazione fatture e verifica firma. Distribuita in beta su Apple TestFlight.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -162,11 +154,23 @@
     </div>
 
     <h2>Istruzioni di installazione</h2>
-    <ul>
-      <li id="mac-it"><strong>macOS (<code>unwrap-macOS-release</code>)</strong> Scarica <code>Unwrap.dmg</code> dalla pagina della release, aprilo e trascina Unwrap nella cartella <em>Applicazioni</em>. L'app è firmata con Developer ID e notarizzata da Apple. Per aprire sempre i <code>.p7m</code> con un doppio clic, fai clic destro su un file <code>.p7m</code> nel Finder, scegli «Ottieni informazioni», apri «Apri con», seleziona Unwrap e premi «Modifica tutti…».</li>
-      <li id="windows-it"><strong>Windows (<code>unwrap-win-release</code>)</strong> Dalla pagina della release scarica <code>Unwrap-…-win-x64-Setup.exe</code> per i PC Intel/AMD oppure <code>Unwrap-…-win-arm64-Setup.exe</code> per i PC ARM64 (es. Snapdragon). L'installer non ha ancora una firma Authenticode: se Windows mostra «Windows ha protetto il PC», fai clic su «Ulteriori informazioni» e poi su «Esegui comunque». Nelle note di ogni release trovi l'impronta SHA-256 per verificare il file scaricato.</li>
-      <li id="android-it"><strong>Android (<code>unwrap-android-release</code>)</strong> Dalla pagina della release scarica l'ultimo pacchetto <code>.apk</code> sul tuo telefono o tablet e aprilo da <em>Download</em> o dalle notifiche. Se Android ti chiede il permesso di installare app da quella fonte (es. Chrome o Files), tocca «Impostazioni», attiva l'interruttore e conferma con «Installa».</li>
-      <li id="ios-it"><strong>iOS e iPadOS (Apple TestFlight)</strong> Installa l'app gratuita <strong>TestFlight</strong> da App Store sul tuo iPhone o iPad, poi apri il <a href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">link di invito a TestFlight</a> e tocca «Accetta» e «Installa» per provare la beta e ricevere automaticamente gli aggiornamenti.</li>
+    <ul class="install-grid">
+      <li class="install-card" id="mac-it">
+        <strong>macOS (<code>unwrap-macOS-release</code>)</strong>
+        <p>Scarica <code>Unwrap.dmg</code> dalla pagina della release, aprilo e trascina Unwrap nella cartella <em>Applicazioni</em>. L'app è firmata con Developer ID e notarizzata da Apple. Per aprire sempre i <code>.p7m</code> con un doppio clic, fai clic destro su un file <code>.p7m</code> nel Finder, scegli «Ottieni informazioni», apri «Apri con», seleziona Unwrap e premi «Modifica tutti…».</p>
+      </li>
+      <li class="install-card" id="windows-it">
+        <strong>Windows (<code>unwrap-win-release</code>)</strong>
+        <p>Dalla pagina della release scarica <code>Unwrap-…-win-x64-Setup.exe</code> per i PC Intel/AMD oppure <code>Unwrap-…-win-arm64-Setup.exe</code> per i PC ARM64 (es. Snapdragon). L'installer non ha ancora una firma Authenticode: se Windows mostra «Windows ha protetto il PC», fai clic su «Ulteriori informazioni» e poi su «Esegui comunque». Nelle note di ogni release trovi l'impronta SHA-256 per verificare il file scaricato.</p>
+      </li>
+      <li class="install-card" id="android-it">
+        <strong>Android (<code>unwrap-android-release</code>)</strong>
+        <p>Dalla pagina della release scarica l'ultimo pacchetto <code>.apk</code> sul tuo telefono o tablet e aprilo da <em>Download</em> o dalle notifiche. Se Android ti chiede il permesso di installare app da quella fonte (es. Chrome o Files), tocca «Impostazioni», attiva l'interruttore e conferma con «Installa».</p>
+      </li>
+      <li class="install-card" id="ios-it">
+        <strong>iOS e iPadOS (Apple TestFlight)</strong>
+        <p>Installa l'app gratuita <strong>TestFlight</strong> da App Store sul tuo iPhone o iPad, poi apri il <a href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">link di invito a TestFlight</a> e tocca «Accetta» e «Installa» per provare la beta e ricevere automaticamente gli aggiornamenti.</p>
+      </li>
     </ul>
 
     <h2>Sostieni lo sviluppo</h2>
@@ -196,14 +200,12 @@
     <h2>All available releases</h2>
     <div class="release-grid">
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>macOS</h3>
-            <span class="badge-beta">Beta</span>
-          </div>
-          <p class="release-req">macOS 27 &ldquo;Golden Gate&rdquo; or later &middot; Apple Silicon</p>
-          <p class="release-desc">Native app signed and notarized by Apple. Includes a Finder Quick Look extension to preview files with the spacebar, batch folder extraction, multiple tabs and windows, and built-in updates.</p>
+        <div class="release-header">
+          <h3>macOS</h3>
+          <span class="badge-beta">Beta</span>
         </div>
+        <p class="release-req">macOS 27 &ldquo;Golden Gate&rdquo; or later &middot; Apple Silicon</p>
+        <p class="release-desc">Native app signed and notarized by Apple. Includes a Finder Quick Look extension to preview files with the spacebar, batch folder extraction, multiple tabs and windows, and built-in updates.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://github.com/frabolla/unwrap-macOS-release/releases/latest" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -217,14 +219,12 @@
       </div>
 
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>Windows</h3>
-            <span class="badge-beta">Beta</span>
-          </div>
-          <p class="release-req">Windows 11 &middot; x64 (Intel/AMD) or ARM64 processor</p>
-          <p class="release-desc">Native desktop app for Windows 11 with dedicated installers for x64 and ARM64 PCs (e.g. Snapdragon). Automatically associates <code>.p7m</code> and <code>.m7m</code> files on double-click, with tabs, page thumbnails, printing, batch extraction, and signed updates.</p>
+        <div class="release-header">
+          <h3>Windows</h3>
+          <span class="badge-beta">Beta</span>
         </div>
+        <p class="release-req">Windows 11 &middot; x64 (Intel/AMD) or ARM64 processor</p>
+        <p class="release-desc">Native desktop app for Windows 11 with dedicated installers for x64 and ARM64 PCs (e.g. Snapdragon). Automatically associates <code>.p7m</code> and <code>.m7m</code> files on double-click, with tabs, page thumbnails, printing, batch extraction, and signed updates.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://github.com/frabolla/unwrap-win-release/releases/latest" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -238,14 +238,12 @@
       </div>
 
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>Android</h3>
-            <span class="badge-beta">Beta</span>
-          </div>
-          <p class="release-req">Android 13 or later &middot; Smartphones &amp; tablets</p>
-          <p class="release-desc">Native Material 3 app for phones and tablets. Opens <code>.p7m</code>, <code>.m7m</code>, e-invoices, and PEC messages from any app or inside the private <em>My Files</em> library, with A4 PDF export and sharing.</p>
+        <div class="release-header">
+          <h3>Android</h3>
+          <span class="badge-beta">Beta</span>
         </div>
+        <p class="release-req">Android 13 or later &middot; Smartphones &amp; tablets</p>
+        <p class="release-desc">Native Material 3 app for phones and tablets. Opens <code>.p7m</code>, <code>.m7m</code>, e-invoices, and PEC messages from any app or inside the private <em>My Files</em> library, with A4 PDF export and sharing.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://github.com/frabolla/unwrap-android-release/releases/latest" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -259,14 +257,12 @@
       </div>
 
       <div class="release-card">
-        <div>
-          <div class="release-header">
-            <h3>iOS &amp; iPadOS</h3>
-            <span class="badge-beta">TestFlight Beta</span>
-          </div>
-          <p class="release-req">iOS / iPadOS 18 or later &middot; iPhone &amp; iPad</p>
-          <p class="release-desc">Native iPhone and iPad app with a private <em>My Files</em> library, Files app and cloud provider integration, Quick Look previews, email/PEC reader, invoice rendering, and signature verification. Distributed in beta on Apple TestFlight.</p>
+        <div class="release-header">
+          <h3>iOS &amp; iPadOS</h3>
+          <span class="badge-beta">TestFlight Beta</span>
         </div>
+        <p class="release-req">iOS / iPadOS 18 or later &middot; iPhone &amp; iPad</p>
+        <p class="release-desc">Native iPhone and iPad app with a private <em>My Files</em> library, Files app and cloud provider integration, Quick Look previews, email/PEC reader, invoice rendering, and signature verification. Distributed in beta on Apple TestFlight.</p>
         <div class="release-actions">
           <a class="download-btn" href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -280,11 +276,23 @@
     </div>
 
     <h2>Installation instructions</h2>
-    <ul>
-      <li id="mac-en"><strong>macOS (<code>unwrap-macOS-release</code>)</strong> Download <code>Unwrap.dmg</code> from the release page, open it, and drag Unwrap into your <em>Applications</em> folder. The app is signed with a Developer ID and notarized by Apple. To always open <code>.p7m</code> files with a double-click, right-click a <code>.p7m</code> file in Finder, choose &ldquo;Get Info&rdquo;, expand &ldquo;Open with&rdquo;, select Unwrap, and click &ldquo;Change All…&rdquo;.</li>
-      <li id="windows-en"><strong>Windows (<code>unwrap-win-release</code>)</strong> From the release page, download <code>Unwrap-…-win-x64-Setup.exe</code> for Intel/AMD PCs or <code>Unwrap-…-win-arm64-Setup.exe</code> for ARM64 PCs (e.g. Snapdragon). The installer does not have an Authenticode signature yet: if Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo;. Each release note lists the SHA-256 fingerprint to verify the downloaded file.</li>
-      <li id="android-en"><strong>Android (<code>unwrap-android-release</code>)</strong> Download the latest <code>.apk</code> package from the release page onto your phone or tablet and open it from <em>Downloads</em> or your notifications. If Android asks for permission to install unknown apps from your browser or file manager, tap &ldquo;Settings&rdquo;, enable the toggle, and tap &ldquo;Install&rdquo;.</li>
-      <li id="ios-en"><strong>iOS &amp; iPadOS (Apple TestFlight)</strong> Install the free <strong>TestFlight</strong> app from the App Store on your iPhone or iPad, then open the <a href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">TestFlight invitation link</a> and tap &ldquo;Accept&rdquo; and &ldquo;Install&rdquo; to try the beta and receive automatic updates.</li>
+    <ul class="install-grid">
+      <li class="install-card" id="mac-en">
+        <strong>macOS (<code>unwrap-macOS-release</code>)</strong>
+        <p>Download <code>Unwrap.dmg</code> from the release page, open it, and drag Unwrap into your <em>Applications</em> folder. The app is signed with a Developer ID and notarized by Apple. To always open <code>.p7m</code> files with a double-click, right-click a <code>.p7m</code> file in Finder, choose &ldquo;Get Info&rdquo;, expand &ldquo;Open with&rdquo;, select Unwrap, and click &ldquo;Change All…&rdquo;.</p>
+      </li>
+      <li class="install-card" id="windows-en">
+        <strong>Windows (<code>unwrap-win-release</code>)</strong>
+        <p>From the release page, download <code>Unwrap-…-win-x64-Setup.exe</code> for Intel/AMD PCs or <code>Unwrap-…-win-arm64-Setup.exe</code> for ARM64 PCs (e.g. Snapdragon). The installer does not have an Authenticode signature yet: if Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo;. Each release note lists the SHA-256 fingerprint to verify the downloaded file.</p>
+      </li>
+      <li class="install-card" id="android-en">
+        <strong>Android (<code>unwrap-android-release</code>)</strong>
+        <p>Download the latest <code>.apk</code> package from the release page onto your phone or tablet and open it from <em>Downloads</em> or your notifications. If Android asks for permission to install unknown apps from your browser or file manager, tap &ldquo;Settings&rdquo;, enable the toggle, and tap &ldquo;Install&rdquo;.</p>
+      </li>
+      <li class="install-card" id="ios-en">
+        <strong>iOS &amp; iPadOS (Apple TestFlight)</strong>
+        <p>Install the free <strong>TestFlight</strong> app from the App Store on your iPhone or iPad, then open the <a href="https://testflight.apple.com/join/SPbz4AeN" target="_blank" rel="noopener">TestFlight invitation link</a> and tap &ldquo;Accept&rdquo; and &ldquo;Install&rdquo; to try the beta and receive automatic updates.</p>
+      </li>
     </ul>
 
     <h2>Support development</h2>

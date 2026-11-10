@@ -48,3 +48,27 @@ function updateThemeButton() {
 
 updateLangControls();
 systemDark.addEventListener('change', updateThemeButton);
+
+function openFaqFromHash() {
+  if (location.hash) {
+    try {
+      var target = document.querySelector(location.hash);
+      if (target) {
+        if (target.tagName && target.tagName.toLowerCase() === 'details') {
+          target.open = true;
+        } else {
+          var parentDetails = target.closest('details');
+          if (parentDetails) parentDetails.open = true;
+        }
+        setTimeout(function() {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 60);
+      }
+    } catch (e) {}
+  }
+}
+window.addEventListener('DOMContentLoaded', openFaqFromHash);
+window.addEventListener('hashchange', openFaqFromHash);
+if (document.readyState === 'interactive' || document.readyState === 'complete') {
+  openFaqFromHash();
+}
